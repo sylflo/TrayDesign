@@ -1,0 +1,174 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery-1.7.2.js"></script>
+<script>
+function createSvg(tagName){
+	return document.createElementNS('http://www.w3.org/2000/svg',tagName);
+}
+$(function(){ 
+	
+	function createSvg(tagName){
+		return document.createElementNS('http://www.w3.org/2000/svg',tagName);
+	};
+	function dimond(json){
+		var vrem=document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+		var rem=parseFloat(vrem);
+			//菱形传y轴上的坐标
+			//peak_right
+			//var peakHeight=document.querySelector('.peak_right').offsetHeight;
+			//console.log(peakHeight)
+			var maxH=4.95*rem;
+			
+			//坐标换算rem
+			var arrJson=[];
+			for(var name in json){
+				arrJson.push(json[name]);
+			}
+			
+			var arrMax=-99999999999999999999;
+			for(var i=0; i<arrJson.length; i++){
+				if(arrJson[i]>=arrMax){
+					arrMax=arrJson[i]
+				}
+			}
+			
+			var arrH=[];
+			
+			
+			var feng=(json["feng"]/arrMax*0.0495*100==4.95) ? 0.55:4.95-json["feng"]/arrMax*0.0495*100;
+			var ping=(json["ping"]/arrMax*0.0495*100==4.95) ? 0.55:4.95-json["ping"]/arrMax*0.0495*100;
+			var jian=(json["jian"]/arrMax*0.0495*100==4.95) ? 0.55:4.95-json["jian"]/arrMax*0.0495*100;
+			var gu=(json["gu"]/arrMax*0.0495*100==4.95 ) ? 0.55:4.95-json["gu"]/arrMax*0.0495*100;
+			//console.log(arrH)
+			//var arrH=[3.6*rem,2.325*rem,4.05*rem,0.725*rem];
+			arrH=[feng*rem,ping*rem,jian*rem,gu*rem]
+			console.log(arrH)
+			//console.log(arrH)
+			//console.log(rem)
+			//console.log(parseFloat(1.175*rem));
+			var DIMOND_SIZE=[
+				{
+					d:'M'+(1.175*rem)+' '+(5.9*rem)+' L'+(0*rem)+' '+(4.95*rem)+' '+(1.175*rem)+' '+arrH[0],
+					cor:'#ffab31'},
+				{
+					d:'M'+(1.175*rem)+' '+(5.9*rem)+' L'+(2.35*rem)+' '+(4.95*rem)+' '+(1.175*rem)+' '+arrH[0],
+					cor:'#f18d01'
+				},
+				{
+					d:'M'+(3.725*rem)+' '+(5.9*rem)+' L'+(2.55*rem)+' '+(4.95*rem)+' '+(3.75*rem)+' '+arrH[1],
+					cor:'#16a6ff'
+				},
+				{
+					d:'M'+(3.725*rem)+' '+(5.9*rem)+' L'+(4.9*rem)+' '+(4.95*rem)+' '+(3.75*rem)+' '+arrH[1],
+					cor:'#008ee4'
+				},
+				{
+					d:'M'+(6.25*rem)+' '+(5.9*rem)+' L'+(5.15*rem)+' '+(4.95*rem)+' '+(6.25*rem)+' '+arrH[2],
+					cor:'#ff5b5c'
+					
+				},
+				{
+					d:'M'+(6.25*rem)+' '+(5.9*rem)+' L'+(7.425*rem)+' '+(4.95*rem)+' '+(6.25*rem)+' '+arrH[2],
+					cor:'#e53b3c'
+				},
+				{
+					d:'M'+(8.8*rem)+' '+(5.9*rem)+' L'+(7.625*rem)+' '+(4.95*rem)+' '+(8.8*rem)+' '+arrH[3],
+					cor:'#1bbc9b'
+				},
+				{
+					d:'M'+(8.8*rem)+' '+(5.9*rem)+' L'+(9.975*rem)+' '+(4.95*rem)+' '+(8.8*rem)+' '+arrH[3],
+					cor:'#009c7d'
+				}
+			];
+	
+			var CIRCLE_SIZE=[
+				{cx:1.175*rem,cy:arrH[0]-0.35*rem,r:0.2*rem,cor:'#ffab31'},
+				{cx:3.725*rem,cy:arrH[1]-0.35*rem,r:0.2*rem,cor:'#19a6ff'},
+				{cx:6.25*rem,cy:arrH[2]-0.35*rem,r:0.2*rem,cor:'#ff5b5a'},
+				{cx:8.8*rem,cy:arrH[3]-0.35*rem,r:0.2*rem,cor:'#1bbc9b'}
+			];
+	
+			var LINE_SIZE=[
+				{x1:1.175*rem+0.2*rem,y1:arrH[0]-0.35*rem,x2:3.725*rem-0.2*rem,y2:arrH[1]-0.35*rem},
+				{x1:3.725*rem+0.2*rem,y1:arrH[1]-0.35*rem,x2:6.25*rem-0.2*rem,y2:arrH[2]-0.35*rem},
+				{x1:6.25*rem+0.2*rem,y1:arrH[2]-0.35*rem,x2:8.8*rem-0.2*rem,y2:arrH[3]-0.35*rem}
+			]
+	
+			function Dimond(type){
+				this.type=type;
+			}
+	
+			Dimond.prototype.draw=function(oS,tagname){
+				//菱形
+				var d=DIMOND_SIZE[this.type].d;
+				var color=DIMOND_SIZE[this.type].cor;
+	
+				//圆
+				var cx=CIRCLE_SIZE[this.type%CIRCLE_SIZE.length].cx;
+				var cy=CIRCLE_SIZE[this.type%CIRCLE_SIZE.length].cy;
+				var r=CIRCLE_SIZE[this.type%CIRCLE_SIZE.length].r;
+				var color1=CIRCLE_SIZE[this.type%CIRCLE_SIZE.length].cor;
+				
+				//线
+				var x1=LINE_SIZE[this.type%LINE_SIZE.length].x1;
+				var y1=LINE_SIZE[this.type%LINE_SIZE.length].y1;
+	
+				var x2=LINE_SIZE[this.type%LINE_SIZE.length].x2;
+				var y2=LINE_SIZE[this.type%LINE_SIZE.length].y2;
+	
+				//console.log(x1,y1,x2,y2)
+	
+				var oPath=createSvg(tagname);
+				
+	
+				switch (tagname){
+					case 'path':
+						oPath.setAttribute('d',d);
+						oPath.style.fill=color;
+						break;
+					case 'circle':
+						oPath.setAttribute('cx',cx);
+						oPath.setAttribute('cy',cy);
+						oPath.setAttribute('r',r);
+						oPath.style.fill=color1;
+						break;
+					case 'line':
+						oPath.setAttribute('x1',x1);
+						oPath.setAttribute('y1',y1);
+						oPath.setAttribute('x2',x2);
+						oPath.setAttribute('y2',y2);
+						oPath.setAttribute('stroke','#aeaeae');
+						
+						//oPath.strokWidth='2';
+						break;
+				}
+				
+				oS.appendChild(oPath);
+			}
+	
+			var oS=document.querySelector('#s1');
+			
+			//画图
+			for(var i=0; i<DIMOND_SIZE.length; i++){
+				var p = new Dimond(i);
+				p.draw(oS,"path");
+				p.draw(oS,'circle');
+				p.draw(oS,'line');
+			}
+	}
+
+		
+})
+</script>
+</head>
+
+<body style="width:100%; height:100%;">
+<div class="swiper-slide" id="Layout">
+	<svg id="svg1">
+    </svg>	     	
+</div>
+</body>
+</html>
