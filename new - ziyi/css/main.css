@@ -13,6 +13,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    margin-left: 30px;
 }
 
 
@@ -49,7 +50,6 @@ li {
 
 .green-font {
     color: #66FF99;
-    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -150,10 +150,6 @@ and on the right I have a box div with eight column and inside this I have the o
     min-height: 100%;
 }
 
-#tray h2 {
-    font-size: 1em;
-}
-
 /* Tray layer */
 
 #tray {
@@ -168,5 +164,56 @@ and on the right I have a box div with eight column and inside this I have the o
 }
 
 #tray h2 {
-    font-size: 1em;
+    color: #ff6666;
 }
+
+
+/* Tray Style */
+
+#traystyle-part-one {
+    height: 100%;
+    min-height: 100%;
+    background-color: cyan;
+}
+/*
+#traystyle-part-two {
+    height: 50vh;
+//background-color: red;
+    z-index: 1;
+}
+
+#traystyle-part-one h3 {
+    margin-top: 10vh;
+}
+
+#traystyle-part-one .grouped-rectangle {
+    z-index: 100;
+}
+
+#traystyle-part-one .left-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+
+#traystyle-part-one .rounded-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+
+#traystyle-part-one .right-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+*/

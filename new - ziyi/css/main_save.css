@@ -166,10 +166,7 @@ and on the right I have a box div with eight column and inside this I have the o
     font-size: 1em;
 }
 
-#tray .col-md-8 {
-    background-color: #ff6666;
-    height: 100%;
-}
+
 
 #tray .col-md-12 {
    // background-color: #ff6666;
