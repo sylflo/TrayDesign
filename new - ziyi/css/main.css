@@ -71,7 +71,7 @@ li {
 
 
 /* Section in fullscreen */
-#homepage, #desktop, #tray, .box-left, #p7, #p8, #tearoff, #gadget {
+#homepage, #desktop, #tray, .box-left, #p7, #p8, #tearoff, #gadget, #imgCrop, #text, #buttons {
     height: 100vh;
 }
 
@@ -247,4 +247,9 @@ and on the right I have a box div with eight column and inside this I have the o
 #gadget .col-md-8 {
     background-color: #FFF988;
     height: 100%;
+}
+
+/* Image Crop */
+#imgCrop h3, #text h3 {
+    margin-left: 50px;
 }
