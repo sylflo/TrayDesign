@@ -121,7 +121,8 @@ and on the right I have a box div with eight column and inside this I have the o
 
 .desc-box {
     position: absolute;
-    z-index: 10;
+    z-index: 5;
+    width: 50%;
 }
 
 .desc-box > div {
