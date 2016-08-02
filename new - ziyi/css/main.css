@@ -170,11 +170,6 @@ and on the right I have a box div with eight column and inside this I have the o
 
 /* Tray Style */
 
-#traystyle-part-one {
-    height: 100%;
-    min-height: 100%;
-    background-color: cyan;
-}
 /*
 #traystyle-part-two {
     height: 50vh;
@@ -189,7 +184,7 @@ and on the right I have a box div with eight column and inside this I have the o
 #traystyle-part-one .grouped-rectangle {
     z-index: 100;
 }
-
+*/
 #traystyle-part-one .left-rectangle {
     width: 100%;
     height: 200px;
@@ -216,4 +211,3 @@ and on the right I have a box div with eight column and inside this I have the o
     margin-top: 15vh;
     z-index: 100;
 }
-*/
