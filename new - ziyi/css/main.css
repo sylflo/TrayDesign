@@ -55,6 +55,12 @@ li {
     background: #66FF99;
 }
 
+.green-font {
+    color: #66FF99;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 
 
 /* Homepage */
@@ -82,43 +88,12 @@ I'm doing this so the image in homepage will always be stuck to the navbar */
     height: 100%;
 }
 
-/* Tests */
-#div1 {
-    width : 48%;
-    border: 1px solid red;
-    height: 150px;
-    float:left;
-}
-#div2 {
-    width : 48%;
-    border: 1px solid blue;
-    height: 150px;
-    float:right;
-    overflow-y:scroll;
-    background-color: yellow;
-}
-
-#msgErreur {
-    color:white;
-    position:absolute;
-    z-index:5;
-}
-#msgErreur > div {
-    background:#942911;
-    position: relative;
-    top:30px;
-    left: -10px;
-    width : 150px;
-    height : 30px;
-}
-
 /* So this part with the box div is a bit tricky basically I have a left div only take two column
 and on the right I have a box div with eight column and inside this I have the overlay div */
 
 /* So here it's my left box height:1OOvh means take all the height of the browser */
 .box-left {
     height: 100vh;
-    background-color: yellow;
 }
 
 /* For the overlay div we put a position so you can place your elements wherever you want
@@ -126,6 +101,8 @@ and on the right I have a box div with eight column and inside this I have the o
 .box-overlay {
     position:absolute;
     z-index:5;
+    font-size: 2em;
+    //padding: 100px 0 0 10px;
 }
 
 /* So after you select the overlay div and all his direct children
@@ -133,7 +110,7 @@ and on the right I have a box div with eight column and inside this I have the o
  The properties in the end using vh let me chose the height I want and vertical center the element inside the div
  */
 .box-overlay > div {
-    background:#942911;
+    background:white;
     position: relative;
     left: -40vh;
     width : 70vh;
@@ -148,10 +125,13 @@ and on the right I have a box div with eight column and inside this I have the o
 }
 
 .desc-box > div {
-    background:purple;
+    //background:pu;
     position: relative;
-    left: 30vh;
-   // height : 70vh;
+    left: 35vh;
     margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-    //transform: translateY(-50%)
+}
+
+.inside-overlay {
+    padding: 10px 0 0 10px;
+    border: 10px solid black;
 }
