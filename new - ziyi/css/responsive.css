@@ -2,7 +2,7 @@
 /* So the big difficulty in this one page is each section is a fullscreen usually you do only responsive on the
 width cos it's really easier. Cos if you remove the responsive will see each element will be stack on each other
 cos you there are not enough room for the element to be on the screen together */
-/*@media (max-height: 400px) {
+@media (max-height: 400px) {
 
     #homepage {
         height: 100vh;
@@ -15,4 +15,19 @@ cos you there are not enough room for the element to be on the screen together *
     #tray {
         height: 120vh;
     }
-}*/
+}
+
+/* So here we will work on the responsive width we will use the same size as bootstrap to keep our code clean
+
+Extra small devices Phones (<768px)
+Small devices Tablets (≥768px)
+Medium devices Desktops (≥992px)
+Large devices Desktops (≥1200px)
+*/
+
+@media (max-width: 768px) {
+
+    #traystyle-part-one {
+        background-color: transparent;
+    }
+}
