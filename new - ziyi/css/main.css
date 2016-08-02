@@ -71,7 +71,7 @@ li {
 
 
 /* Section in fullscreen */
-#homepage, #desktop, #tray, .box-left, #p7, #p8, #tearoff {
+#homepage, #desktop, #tray, .box-left, #p7, #p8, #tearoff, #gadget {
     height: 100vh;
 }
 
@@ -235,4 +235,16 @@ and on the right I have a box div with eight column and inside this I have the o
 #tearoff .col-md-5:first-child {
     margin-top: 50vh;
     transform: translateY(-50%)
+}
+
+/* Gadget Layer */
+#gadget .box-overlay > div {
+    background-color: black;
+}
+#gadget h2 {
+    color: #FFF988;
+}
+#gadget .col-md-8 {
+    background-color: #FFF988;
+    height: 100%;
 }
