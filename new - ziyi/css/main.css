@@ -129,7 +129,7 @@ and on the right I have a box div with eight column and inside this I have the o
     padding-left: 0;
 }
 
-#homepage .col-lg-6:last-child {
+#homepage:nth-child(1) {
     text-align: right;
 }
 
