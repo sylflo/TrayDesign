@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Design Language for Bestseller</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900,200italic,300italic,400italic,600italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/navbar-fixed-side.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <nav class="navbar navbar-default navbar-fixed-side">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav">
+                            <li><a href="#homepage">Homepage</a></li>
+                            <li><a href="#overview">Step into Tray Design</a></li>
+                            <li><a href="#desktop">Desktop Layer</a></li>
+                            <li><a href="#tray">Tray layer</a>
+
+                                <ul class="submenu">
+                                    <li><a href="#traystyle">Different styles of Trays</a></li>
+                                    <li><a href="#spacing">Spacing</a></li>
+                                    <li><a href="#tearoff">Tear-off Area</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#gadget">Gadget Layer</a>
+
+                                <ul class="submenu">
+                                    <li><a href="#imgCrop">Image</a></li>
+                                    <li><a href="#text">Text</a></li>
+                                    <li><a href="#buttons">Buttons</a></li>
+                                    <li><a href="#video">Video</a></li>
+                                    <li><a href="#animation">Animation</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#layout">Layout Rules</a>
+
+                                <ul class="submenu">
+                                    <li><a href="#axis">Axis</a></li>
+                                    <li><a href="#safe-area">Safe Area</a></li>
+                                    <li><a href="#balance">Balance and Rhythm</a></li>
+                                    <li><a href="#separate">Separate Text From Images</a></li>
+                                    <li><a href="#composition">Composition</a></li>
+                                    <li><a href="#three-elements">Three Elements In One Row</a></li>
+                                    <li><a href="#color">Colors</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+
+            <div class="content row" id="homepage">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img class="img-responsive" id="homepage-img" src="img/homepage_bg.png">
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <section>
+                        <ul id="links">
+                            <li id="only">
+                                <a href="http://www.only.cn">
+                                    <img src="img/logo_only.png">
+                                </a>
+                            </li>
+                            <li id="jj">
+                                <a href="http://www.jackjones.cn">
+                                    <img src="img/logo_jj.png">
+                                </a>
+                            </li>
+                            <li id="vm">
+                                <a href="http://www.veromoda.cn">
+                                    <img src="img/logo_vm.png">
+                                </a>
+                            </li>
+                            <li id="slt">
+                                <a href="http://www.selected.cn">
+                                    <img src="img/logo_slt.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+
+                <h1 class="title uppercase">Tray Design</h1>
+            </div>
+
+
+            <!-- P1 -->
+         <div class="content row text-center" id="p1">
+
+                <div id="p1container">
+                    <h2 class="title">Intentions Behind TRAY Design</h2>
+                    <div class="rec orange"></div>
+
+                    <p class="text">Aligned concept, aesthetics& philosophy across digital interfaces<br>
+                        Re-defining layering & interactions with comprehensive thinking<br>
+                        New designs with fashion elements abstracting from latest digital design trends
+                    </p>
+                </div>
+            </div>
+
+            <!-- P2 -->
+          <div class="content row text-center" id="p2">
+
+                <div id="p2container">
+                    <h2 class="title">Challenges We Are Facing</h2>
+                    <div class="rec green"></div>
+
+                    <section>
+                        <p class="text">Flat Design trend brought simplicity in but richness out<br>
+                            Endless news feeds layout provides instant interactions but ignores thematic content<br>
+                            Mobile screens are vertical instead of horizontal<br>
+                            Video and animation are invading digital store-fronts
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- P3 Overview -->
+           <div class="content row text-center" id="overview">
+
+                <div id="p3container">
+                    <h2 class="title">Step Into Tray Design</h2>
+                    <div class="rec orange"></div>
+
+                    <div class="col-md-6">
+                        <p class="text">Before making TRAY Design, we looked at the major design trends in recent years,
+                            and realized that Flat Design and many other trends are making things so isolated that could
+                            not present the implication of the real Fashion world. We decided to restore some of the
+                            true effectivevisual layers of the design principles:
+                        </p>
+                        <img class="img-responsive" src="img/p3_3layers.gif" id="p3gif">
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="img/overview_1.png" id="p3img">
+                        <div id="p3para">
+                            <p class="text"> Gadget Layer</p>
+                            <p class="text"> Tray Layer</p>
+                            <P class="text"> Desktop Layer</P>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--P4 Desktop -->
+          <div class="content row" id="desktop">
+
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4 box-left">
+                </div>
+
+                <div class="col-md-8 col-lg-8">
+                    <h2 class="title hidden-md hidden-lg">Desktop <br> Layer</h2>
+
+                    <div class="hidden-xs hidden-sm box-overlay uppercase">
+                        <div class="inside-overlay green-font"><h2 class="title">Desktop <br> Layer</h2></div>
+
+                    </div>
+
+                    <div class="desc-box">
+
+                        <div><p class="text">No matter when, the desktop is the layer that connects the “surface” of
+                            screens with the “virtualized” content we present. Although we usually do not “watch” the
+                            wooden tea table and the texture on it, but the “feeling” and “tone” is still “seen” by our
+                            subconscious.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--P5 Tray -->
+          <div class="content row" id="tray">
+
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4 box-left">
+                </div>
+
+                <div class="col-md-8 col-lg-8">
+                    <h2 class="title hidden-md hidden-lg">The Core concept of Tray Layer</h2>
+                    <div class="hidden-xs hidden-sm box-overlay uppercase">
+                        <div class="inside-overlay tray-layer-color-font"><h2>The Core concept of <br> Tray Layer</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="desc-box">
+
+                        <div><p class="text">The tray layer is floating vertically on the “fixed” desktop layer. Desktop
+                            usually indicates the seasonal themes, but all of a sudden could bring bold symbols onto the
+                            surface through tearoff areas. <br>Designers are able to hide and reveal key messages when
+                            start to build up the desktop - quite handy and funny.
+                            <br>
+                            The tray layer is also responsible to provide clear borders to users to concentrate on a
+                            theme instead of surfing on the infinite scrolling. <br>
+                            The tray layer consists of different size of trays: from maximum 1200 pix width (assuming
+                            the maximum width of websites is 1920 pix) to minimum 900 pix width (assuming all screens
+                            are at least 1024 pix wide). It is providing the variety of layout as well to break the
+                            repeating design pattern applied by most of the interfaces.<br>
+                            White surface is by default used as the background for interfaces on most of the devices. It
+                            is most relaxed environment to present content. We believe that the best design of trays
+                            should keep flat, staying none-distracting, works as “white paper” with multiple shaping,
+                            without shades.<br>
+                            The trays provide a thematic framework to organize text, pictures, buttons and animations in
+                            a time-line-based context. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- P6 Tray's style -->
+          <div class="content row" id="traystyle-part-one">
+                <h3 class="title text-center">Different Styles of Trays</h3>
+
+                <div class="grouped-rectangle">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="left-rectangle">
+                        </div>
+                        <div class="text-center">
+                            Rectangle
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="rounded-rectangle">
+                        </div>
+                        <div class="text-center">
+                            Rounded Rectangle
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="right-rectangle">
+                        </div>
+                        <div class="text-center">
+                            Rectangle
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row hidden-xs hidden-sm" id="traystyle-part-two">
+
+            </div>
+
+
+            <!-- P7 GIF -->
+            <div class="content text-center" id="p7">
+                <img src="img/p6_traystyle2.gif">
+            </div>
+
+            <!-- P8 Spacing -->
+         <div class="row content" id="spacing">
+
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <img class="icon" src="img/icon_1.png">
+                    <p class="text">White instead of black is most accepted as the “blank canvas” since the beginning of
+                        alphabet system. White also carries no information but providing the emptiness and time-stream
+                        meaning when working with desktop layer </p>
+
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+
+                    <h3 class="title">Trays of white only</h3>
+                    <img class="img-responsive" id="p8img" src="img/p8_spacing.png">
+                </div>
+
+            </div>
+
+            <!-- P9 Tearoff -->
+         <!-- <div class="row content" id="tearoff">
+
+                <div class="col-md-5">
+                    <img class="icon" src="img/icon_1.png">
+                    <p class="text">he Playful and Interesting Wormhole as Emphasis
+                        Besides the spaces between trays to enhance themes, tearoffs are reserved make the connection between gadgets and the desktop.Because the holes creates parallax visual effects and transforming implications into visual contrast, it became a perfect indication of emphasis in each tray. Only ONE tearoff is allowed within each tray to limit the distraction to the focus of users.
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <h3 class="title">Tear-off Area</h3>
+                    <img id="p9img" src="img/p8_spacing.png">
+                   <!--<img  src="img/p9_tearoff.gif">-->
+                <!--</div>
+
+            </div>-->
+
+
+
+
+            <!-- P10 Gadget Layer -->
+        <!--   <div class="content row" id="gadget">
+
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4 box-left">
+                </div>
+
+                <div class="col-md-8 col-lg-8">
+                    <h2 class="title hidden-md hidden-lg">Gadget Layer</h2>
+                    <div class="hidden-xs hidden-sm box-overlay uppercase">
+                        <div class="inside-overlay tray-layer-color-font"><h2>Gadget<br>Layer</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="desc-box">
+
+                        <div>
+                            <p class="text">Gadgets concept are introduced by Android interface, and well accepted by users as a way of presenting hybrid content. Our design cannot ignore the  fusion of different type of modules on the same layer. How we can improve the design?
+                                Text separated from picture as an type of gadgets essential to improve the readability of design. Combinations of texts and pictures in various ways are still allowed. Text together with its “transparent” card-back could be placed onto the pictures, similar to reality.
+                                Then coupons, count-down, buttons, videos and animations and more types of content could be placed as gadgets with a minimal spacing to each other without shape limits but size requirements. Text is only allowed to be demonstrated as part of the artwork or illustration within a gadget to avoid producing meaningless layers.
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>-->
+
+            <!-- P11 Image Crop -->
+          <!--   <div class="content row" id="imgCrop">
+                 <div class="p11bg">
+                     <h3 class="title">Image Crop</h3>
+
+                     <div class="text-center">
+                     <div class="col-md-4">
+                         <img src="img/img_crop_01.jpg"/>
+                     </div>
+
+                     <div class="col-md-4">
+                         <img src="img/img_crop_02.jpg"/>
+                     </div>
+
+                     <div class="col-md-4">
+                         <img src="img/img_crop_03.jpg"/>
+                     </div>
+
+                    </div>
+                     <p class="text text-center">
+                         <img src="img/p11_icon.jpg">
+                         <span>We use three different aspect ratios when cropping images, which are 16:10, 4:3, and 1:1.</span>
+                     </p>
+                 </div>
+             </div>
+-->
+            <!-- P12 Text -->
+           <!--  <div class="content row" id="text">
+
+                <h3 class="title">Text</h3>
+                <div class="text-center">
+                    <img src="img/p12_text.png">
+                    <p class="text">We prefer to use open-sourced sans-serif font, which is free for commercial use.</p>
+                </div>
+
+            </div>-->
+
+
+            <!-- P13 Buttons -->
+            <!-- <div id="buttons">
+                <div>
+                    <h3 class="title">Buttons</h3>
+                    <div>
+                        <img src="img/p13_button2.gif">
+                        <p class="text">Interactive buttons can have up to four dierent states, but depending on the type of device certain states may be unavailable.<br/>
+                            Desktop button usually uses the static and hover state, where mobile devices mainly use the static and active state.</p>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <!-- P14 Video -->
+            <!--     <div id="video">
+                    <div>
+                        <h3 class="title">Video</h3>
+                        <div><img src="img/p14_vedio.png">
+                            <p class="text">Videos are allowed be shown in full screen, however, they can’t be repeated when playing.</p>
+                        </div>
+                    </div>
+                </div>-->
+
+            <!-- P15 Animation -->
+            <!--     <div id="animation">
+                    <div>
+                        <h3 class="title">Animation</h3>
+                        <div><img src="img/p15_animation.png">
+                            <p class="text">Animations can be used to guide users around the website and entice consumers to make purchases. Adding interactive
+                                elements and drawing users' attention to them with the help of animation eects can help us improve our UX.</p>
+                        </div>
+                    </div>
+                </div>-->
+
+
+            <!-- P16 Layout Rules -->
+            <!--   <div id="layout">
+                  <h2 class="title">Layout Rules</h2>
+              </div>-->
+
+            <!-- P17 Axis -->
+            <!--                <div id="axis">
+
+                               <h3 class="title">Axis</h3>
+                               <div><img src="img/p17_axis.gif">
+                                   <p class="text">We made several references to magazine layout design, such as the idea of using vertical axis to create a visual balance of the contents.</p>
+                               </div>
+
+                           </div>-->
+
+            <!-- P18 Safe Area -->
+            <!--    <div id="safe-area">
+                   <div>
+                       <h3 class="title">Safe Area</h3>
+                       <div><img src="img/p18_safearea.png">
+                           <p class="text">Safe area is invisible, however, all contents should be placed inside of the safe area.</p>
+                       </div>
+                   </div>
+               </div>
+-->
+            <!-- P19 Balance and Rhythm -->
+            <!--   <div id="balance">
+
+                  <h3 class="title">Balance and Rhythm</h3>
+                  <div>
+                      <img src="img/p19_balance.png">
+                  </div>
+
+              </div>
+
+
+              <div id="separate">
+                  <div>
+                      <h3 class="title">Separate text from images</h3>
+
+                      <img src="img/p20_separate.png">
+                  </div>
+              <p class="text">
+                  Most of fonts are not free to use. We've been avoiding to add text content in images when designing banners or product pictures. Instead, we chose to simply overlay the text over images by coding. other than to avoid causing copyright issues, we can ensure that the text contents are displayed properly even on smaller screens and at different resolutions and also to make them easier to edit when needed by using this technique.
+              </p>
+              </div>-->
+
+            <!-- P21 Composition -->
+            <!--      <div id="composition">
+
+                     <h3 class="title">Composition</h3>
+
+
+                     <img src="img/p21_composition.png">
+
+                     <div class="text">
+                         <p>There are two ways to layout the images and text contents.</p>
+                         <p>When there’s a gap between the image and text contents, the width of the gap should always be equal or greater than 30px.</p>
+                         <p>When text content is overlapping image, the width of the overlap area should not be exceed half width of the text content itself.</p>
+                     </div>
+
+                 </div>
+
+ -->
+            <!-- P22 3 Elements In One Row -->
+            <!--<div id="three-elements">
+
+               <h3 class="title">Three-invisible-columns Layoutin Trays</h3>
+               <p class="text">To fit smart phones screens, the horizontal space of each tray is required to place no more than three gadgets in one line. Even text as a separate gadget is obeying the same rule. This in fact defines an invisible layout of three columns that nails each gadget down within certain area. Spacing between gadgets
+                   <img src="img/p22_3elements.png">
+
+
+           </div>-->
+
+
+            <!-- P23 Colors -->
+            <!--     <div id="colors">
+                    <div class="colorBg"></div>
+                    <h3 class="title">Color</h3>
+
+                    <i class="circle1"></i>
+                    <p class="mt_big">#000000</p>
+
+
+                    <i class="circle2"></i>
+                    <p class="mt_big">#FFFFFF</p>
+
+                    <p class="text">We use black and white as our theme color.</p>
+                </div>-->
+
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
