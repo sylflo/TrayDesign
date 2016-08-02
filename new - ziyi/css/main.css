@@ -125,15 +125,20 @@ and on the right I have a box div with eight column and inside this I have the o
     position: relative;
 }
 
+#homepage .col-lg-6:first-child {
+    padding-left: 0;
+}
+
+#homepage .col-lg-6:last-child {
+    text-align: right;
+}
+
 #homepage h1 {
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
 
-#homepage .col-md-5:last-child {
-    text-align: right;
-}
 
 /* P1 */
 #p1 {
