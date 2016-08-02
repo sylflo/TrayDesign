@@ -61,32 +61,14 @@ li {
     font-weight: bold;
 }
 
-
-
-/* Homepage */
-
-/* Here I'm using first child cos I have to elements with the class .col-md-5, when specifying first-child only the
-first element .col-md-5 will have the css rule apply to it. With this I don't need to create another id for this
-special case.
-I'm doing this so the image in homepage will always be stuck to the navbar */
-#homepage .col-md-5:first-child {
-    padding-left: 0;
+.tray-layer-color-font {
+    color: #ff6950;
 }
 
-#homepage .col-md-5:last-child {
-    text-align: right;
+.tray-layer-color {
+    background: #ff6950;
 }
 
-/* Desktop */
-#desktop {
-    height: 100vh;
-    //background-color: red;
-}
-
-#desktop .col-md-8 {
-    background-color: #66FF99;
-    height: 100%;
-}
 
 /* So this part with the box div is a bit tricky basically I have a left div only take two column
 and on the right I have a box div with eight column and inside this I have the overlay div */
@@ -102,7 +84,7 @@ and on the right I have a box div with eight column and inside this I have the o
     position:absolute;
     z-index:5;
     font-size: 2em;
-    //padding: 100px 0 0 10px;
+//padding: 100px 0 0 10px;
 }
 
 /* So after you select the overlay div and all his direct children
@@ -122,11 +104,10 @@ and on the right I have a box div with eight column and inside this I have the o
 .desc-box {
     position: absolute;
     z-index: 5;
-    width: 50%;
+    width: 65%;
 }
 
 .desc-box > div {
-    //background:pu;
     position: relative;
     left: 35vh;
     margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
@@ -135,4 +116,39 @@ and on the right I have a box div with eight column and inside this I have the o
 .inside-overlay {
     padding: 10px 0 0 10px;
     border: 10px solid black;
+}
+
+/* Homepage */
+
+/* Here I'm using first child cos I have to elements with the class .col-md-5, when specifying first-child only the
+first element .col-md-5 will have the css rule apply to it. With this I don't need to create another id for this
+special case.
+I'm doing this so the image in homepage will always be stuck to the navbar */
+#homepage .col-md-5:first-child {
+    padding-left: 0;
+}
+
+#homepage .col-md-5:last-child {
+    text-align: right;
+}
+
+/* Desktop */
+#desktop {
+    height: 100vh;
+}
+
+#desktop .col-md-8 {
+    background-color: #66FF99;
+    height: 100%;
+}
+
+/* Tray */
+
+#tray {
+    height: 100vh;
+}
+
+#tray .col-md-8 {
+    background-color:  #ff6666;
+    height: 100%;
 }
