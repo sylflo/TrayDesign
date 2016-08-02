@@ -70,13 +70,14 @@ li {
 }
 
 
+/* Section in fullscreen */
+#homepage, #desktop, #tray, .box-left, #p7, #p8, #tearoff {
+    height: 100vh;
+}
+
 /* So this part with the box div is a bit tricky basically I have a left div only take two column
 and on the right I have a box div with eight column and inside this I have the overlay div */
 
-/* So here it's my left box height:1OOvh means take all the height of the browser */
-.box-left {
-    height: 100vh;
-}
 
 /* For the overlay div we put a position so you can place your elements wherever you want
  And the z-index put put the element in front of other */
@@ -121,7 +122,6 @@ and on the right I have a box div with eight column and inside this I have the o
 /* Homepage */
 
 #homepage {
-    height: 100%;
     position: relative;
 }
 
@@ -154,9 +154,6 @@ and on the right I have a box div with eight column and inside this I have the o
 
 
 /* Desktop */
-#desktop {
-    height: 100vh;
-}
 
 #desktop .col-md-8 {
     background-color: #66FF99;
@@ -170,10 +167,6 @@ and on the right I have a box div with eight column and inside this I have the o
 
 #tray h2 {
     font-size: 1em;
-}
-
-#tray {
-    height: 100vh;
 }
 
 #tray .col-md-8 {
@@ -230,4 +223,16 @@ and on the right I have a box div with eight column and inside this I have the o
     border-radius: 25px;
     margin-top: 15vh;
     z-index: 100;
+}
+
+/* P8  Spacing*/
+#spacing .col-md-5:first-child {
+    margin-top: 50vh;
+    transform: translateY(-50%)
+}
+
+/* P9 Tearoff*/
+#tearoff .col-md-5:first-child {
+    margin-top: 50vh;
+    transform: translateY(-50%)
 }
