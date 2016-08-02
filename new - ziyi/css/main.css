@@ -120,17 +120,38 @@ and on the right I have a box div with eight column and inside this I have the o
 
 /* Homepage */
 
-/* Here I'm using first child cos I have to elements with the class .col-md-5, when specifying first-child only the
-first element .col-md-5 will have the css rule apply to it. With this I don't need to create another id for this
-special case.
-I'm doing this so the image in homepage will always be stuck to the navbar */
-#homepage .col-md-5:first-child {
-    padding-left: 0;
+#homepage {
+    height: 100vh;
+    position: relative;
+}
+
+#homepage h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 #homepage .col-md-5:last-child {
     text-align: right;
 }
+
+/* P1 */
+#p1 {
+    height: 33vh;
+}
+
+/* P2 */
+#p2 {
+    height: 33vh;
+}
+
+/* P3 */
+#p3 {
+    height: 33vh;
+}
+
+
+
 
 /* Desktop */
 #desktop {
