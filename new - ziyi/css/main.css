@@ -1,0 +1,157 @@
+/* General */
+
+/*
+So we want the navbar to take the full height of the screen
+but elements inherits the height of their parents.
+And since the navbar is a child of html and body we need to put the height of 100% for this two elements
+so the navbar can also have a height of 100%
+*/
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+
+/* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
+in the html code cos that's really a bad practice */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* Remove the circle things for the list */
+li {
+    list-style: none;
+}
+
+/* I' using just one class so you can change the size for every box in once */
+.rec {
+    height: 3px;
+    width: 40%;
+    margin: 10px auto 20px auto;
+
+}
+
+.orange {
+    background: #ff6666;
+}
+
+.green {
+    background: #66FF99;
+}
+
+
+
+/* Homepage */
+
+/* Here I'm using first child cos I have to elements with the class .col-md-5, when specifying first-child only the
+first element .col-md-5 will have the css rule apply to it. With this I don't need to create another id for this
+special case.
+I'm doing this so the image in homepage will always be stuck to the navbar */
+#homepage .col-md-5:first-child {
+    padding-left: 0;
+}
+
+#homepage .col-md-5:last-child {
+    text-align: right;
+}
+
+/* Desktop */
+#desktop {
+    height: 100vh;
+    //background-color: red;
+}
+
+#desktop .col-md-8 {
+    background-color: #66FF99;
+    height: 100%;
+}
+
+/* Tests */
+#div1 {
+    width : 48%;
+    border: 1px solid red;
+    height: 150px;
+    float:left;
+}
+#div2 {
+    width : 48%;
+    border: 1px solid blue;
+    height: 150px;
+    float:right;
+    overflow-y:scroll;
+    background-color: yellow;
+}
+
+#msgErreur {
+    color:white;
+    position:absolute;
+    z-index:5;
+}
+#msgErreur > div {
+    background:#942911;
+    position: relative;
+    top:30px;
+    left: -10px;
+    width : 150px;
+    height : 30px;
+}
+
+/* So this part with the box div is a bit tricky basically I have a left div only take two column
+and on the right I have a box div with eight column and inside this I have the overlay div */
+
+/* So here it's my left box height:1OOvh means take all the height of the browser */
+.box-left {
+    height: 100vh;
+    background-color: yellow;
+}
+
+/* For the overlay div we put a position so you can place your elements wherever you want
+ And the z-index put put the element in front of other */
+.box-overlay {
+    position:absolute;
+    z-index:5;
+}
+
+/* So after you select the overlay div and all his direct children
+ and apply a relative position.
+ The properties in the end using vh let me chose the height I want and vertical center the element inside the div
+ */
+.box-overlay > div {
+    background:#942911;
+    position: relative;
+    left: -40vh;
+    width : 70vh;
+    height : 70vh;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%)
+}
+
+.desc-box {
+    position: absolute;
+    z-index: 10;
+}
+
+.desc-box > div {
+    background:purple;
+    position: relative;
+    left: 30vh;
+   // height : 70vh;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    //transform: translateY(-50%)
+}
