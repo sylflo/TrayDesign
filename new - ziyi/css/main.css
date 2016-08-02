@@ -156,3 +156,29 @@ I'm doing this so the image in homepage will always be stuck to the navbar */
 #tray .col-md-12 {
    // background-color: #ff6666;
 }
+
+/* Tray Style */
+#traystyle-part-one {
+    height: 50vh;
+    background-color: cyan;
+}
+
+#traystyle-part-two {
+    height: 50vh;
+    background-color: red;
+}
+
+/*
+#traystyle .top {
+    height: 55vh;
+    background-color: cyan;
+}
+
+.rounded-rectangle {
+    width: 20%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+}*/
