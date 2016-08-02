@@ -121,7 +121,7 @@ and on the right I have a box div with eight column and inside this I have the o
 /* Homepage */
 
 #homepage {
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 

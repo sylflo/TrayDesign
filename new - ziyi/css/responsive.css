@@ -1,0 +1,22 @@
+
+/* So the big difficulty in this one page is each section is a fullscreen usually you do only responsive on the
+width cos it's really easier. Cos if you remove the responsive will see each element will be stack on each other
+cos you there are not enough room for the element to be on the screen together */
+@media (max-height: 400px) {
+
+    #homepage {
+        height: 100vh;
+    }
+
+    #p1, #p2, #p3 {
+        height: 100vh;
+    }
+
+    #tray {
+        height: 120vh;
+    }
+
+
+
+
+}
