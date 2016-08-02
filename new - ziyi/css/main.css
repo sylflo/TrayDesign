@@ -1,3 +1,8 @@
+* { padding: 0; margin: 0; box-sizing: border-box }
+
+html, body {
+    min-height: 100%;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -63,7 +68,7 @@ li {
 
 
 #homepage {
-    height: 100%;
+    min-height: 100%;
 }
 
 #homepage {
@@ -82,4 +87,86 @@ li {
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+
+/* So this part with the box div is a bit tricky basically I have a left div only take two column
+and on the right I have a box div with eight column and inside this I have the overlay div */
+
+
+/* For the overlay div we put a position so you can place your elements wherever you want
+ And the z-index put put the element in front of other */
+.box-overlay {
+    position:absolute;
+    z-index:5;
+    font-size: 2em;
+//padding: 100px 0 0 10px;
+}
+
+/* So after you select the overlay div and all his direct children
+ and apply a relative position.
+ The properties in the end using vh let me chose the height I want and vertical center the element inside the div
+ */
+
+.box-left {
+    min-height: 100%;
+}
+.box-overlay > div {
+    background:white;
+    position: relative;
+    left: -40vh;
+    width : 70vh;
+    height : 70vh;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50vh)
+}
+
+.desc-box {
+    position: absolute;
+    z-index: 5;
+    width: 65%;
+}
+
+.desc-box > div {
+    position: relative;
+    left: 35vh;
+    margin-top: 20vh; /* poussé de la moitié de hauteur de viewport */
+}
+
+.inside-overlay {
+    padding: 10px 0 0 10px;
+    border: 10px solid black;
+}
+
+/* Desktop */
+#desktop {
+    height: 100%;
+    min-height: 100%;
+}
+
+#desktop .col-md-8 {
+    background-color: #66FF99;
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray h2 {
+    font-size: 1em;
+}
+
+/* Tray layer */
+
+#tray {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray .col-md-8 {
+    background-color: #ff6666;
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray h2 {
+    font-size: 1em;
 }

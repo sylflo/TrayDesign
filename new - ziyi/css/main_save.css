@@ -61,14 +61,6 @@ li {
     font-weight: bold;
 }
 
-.tray-layer-color-font {
-    color: #ff6950;
-}
-
-.tray-layer-color {
-    background: #ff6950;
-}
-
 
 /* Section in fullscreen */
 #homepage, #desktop, #tray, .box-left, #p7, #spacings, #tearoff, #gadget, #imgCrop, #text, #buttons {
