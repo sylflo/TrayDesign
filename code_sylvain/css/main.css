@@ -179,7 +179,26 @@ li {
 }
 
 
-/* We have col-md-4 in relative position */
+/* So this is an example following the design for the tray (so you can see the problem
+ On your design you have a box over a background color so to do this we need to position our elements in specific position
+
+ First I separate the screens in two part on of the left (the white background) and on the right (the orange background)
+
+ After I have a class .container-box which contains the box and the text I apply a position:relative on it
+ In this class I separate it in two .box et .text on those two classes I apply a position: absolute
+
+ So since the parent class is in position:relative and the child in position absolute it means the child depends
+ of the position of the parents. The origin is the top let of the parent
+
+
+So the bug we have and it's why I need to have a scrollbar when the height is too small.
+So on this example you can see that if the content is bigger than the container (the screen) it will overlap over section.
+
+Doing fullscreen mode is cool but because of responsive you will have some strong limitations
+
+ If you want to do something cool maybe when you click on the box it'll open a modal. For now I'll do something quick
+ following the design when possible cos I don't want to have something non responsive
+ */
 #tray .container-box {
     position: relative;
     min-height: 75%;
