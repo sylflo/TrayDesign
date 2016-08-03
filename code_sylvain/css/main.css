@@ -228,7 +228,7 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     min-height: 100%;
 }
 
-#tray h2 {
+#tray .col-md-4 h2 {
     color: orange;
 }
 
