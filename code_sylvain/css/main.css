@@ -121,6 +121,35 @@ li {
     font-weight: bold;
 }
 
+/* Layers (for now that's the most tricky part of the website) and check the tray part */
+.container-box {
+    position: relative;
+    min-height: 75%;
+    height: 75%;
+    top: 12.5%;
+}
+
+.container-box .box {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: calc(33.33333333% + 100px);
+    z-index: 10;
+}
+
+.container-box .text {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    left: calc(calc(33.33333333% + 300px));
+    width: 100%;
+    margin: 0 0 0 10px;
+    overflow-y: scroll;
+    height: 100%;
+    min-height: 100%;
+}
+
+
 /* Homepage */
 
 #homepage {
@@ -179,54 +208,36 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
  following the design when possible cos I don't want to have something non responsive
  */
 
-#tray-demo {
+#tray {
     height: 100%;
     min-height: 100%;
 }
 
-#tray-demo .col-md-4 {
+#tray .col-md-4 {
     height: 100%;
     min-height: 100%;
 }
 
-#tray-demo .col-md-8 {
+#tray .col-md-8 {
     background-color: orange;
     height: 100%;
     min-height: 100%;
 }
 
-#tray-demo h2 {
+#tray h2 {
     font-size: 1em;
 }
 
 
-#tray-demo .container-box {
+#tray .container-box {
     position: relative;
     min-height: 75%;
     height: 75%;
     top: 12.5%;
 }
 
-#tray-demo .container-box .box {
-    position: absolute;
-    width: 200px;
-    height: 100%;
-    left: calc(33.33333333% + 100px);
+#tray .container-box .box {
     background-color: yellow;
-    z-index: 10;
 }
-
-#tray-demo .container-box .text {
-   position: absolute;
-    bottom: 0;
-    z-index: 10;
-    left: calc(calc(33.33333333% + 300px));
-    width: 100%;
-    margin: 0 0 0 10px;
-    overflow-y: scroll;
-    height: 100%;
-    min-height: 100%;
-}
-
 
 
