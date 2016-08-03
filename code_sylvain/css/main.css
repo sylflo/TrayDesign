@@ -1,0 +1,269 @@
+/* PUT IN ANOTHER FILE */
+
+/*************************************
+font
+**************************************/
+a{ color:#000; text-decoration:none;}
+p, a,div,text {
+    font-family:'Source Sans Pro',Arial, sans-serif;
+    color: black;
+}
+
+a:link,a:visited {
+    color: black;
+}
+a:hover {
+    background-color: #f7f7f7;
+}
+
+
+
+/* General */
+
+/*
+So we want the navbar to take the full height of the screen
+but elements inherits the height of their parents.
+And since the navbar is a child of html and body we need to put the height of 100% for this two elements
+so the navbar can also have a height of 100%
+*/
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+
+/* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
+in the html code cos that's really a bad practice */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* Remove the circle things for the list */
+li {
+    list-style: none;
+}
+
+/* I' using just one class so you can change the size for every box in once */
+.rec {
+    height: 3px;
+    width: 40%;
+    margin: 10px auto 20px auto;
+
+}
+
+.orange {
+    background: #ff6666;
+}
+
+.green {
+    background: #66FF99;
+}
+
+.green-font {
+    color: #66FF99;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* Section in fullscreen */
+#homepage, #desktop, #tray, .box-left, #p7, #spacings, #tearoff, #gadget, #imgCrop, #text, #buttons {
+    height: 100vh;
+}
+
+/* So this part with the box div is a bit tricky basically I have a left div only take two column
+and on the right I have a box div with eight column and inside this I have the overlay div */
+
+
+/* For the overlay div we put a position so you can place your elements wherever you want
+ And the z-index put put the element in front of other */
+.box-overlay {
+    position:absolute;
+    z-index:5;
+    font-size: 2em;
+//padding: 100px 0 0 10px;
+}
+
+/* So after you select the overlay div and all his direct children
+ and apply a relative position.
+ The properties in the end using vh let me chose the height I want and vertical center the element inside the div
+ */
+.box-overlay > div {
+    background:white;
+    position: relative;
+    left: -40vh;
+    width : 70vh;
+    height : 70vh;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%)
+}
+
+.desc-box {
+    position: absolute;
+    z-index: 5;
+    width: 65%;
+}
+
+.desc-box > div {
+    position: relative;
+    left: 35vh;
+    margin-top: 20vh; /* poussé de la moitié de hauteur de viewport */
+}
+
+.inside-overlay {
+    padding: 10px 0 0 10px;
+    border: 10px solid black;
+}
+
+/* Homepage */
+
+#homepage {
+    position: relative;
+}
+
+#homepage .col-lg-6:first-child {
+    padding-left: 0;
+}
+
+#homepage:nth-child(1) {
+    text-align: right;
+}
+
+#homepage h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+/* P1 */
+#p1 {
+    height: 33vh;
+}
+
+/* P2 */
+#p2 {
+    height: 33vh;
+}
+
+/* P3 */
+#p3 {
+    height: 33vh;
+}
+
+
+
+
+/* Desktop */
+
+#desktop .col-md-8 {
+    background-color: #66FF99;
+    height: 100%;
+}
+
+#desktop h2 {
+    font-size: 1em;
+}
+/* Tray */
+
+#tray h2 {
+    font-size: 1em;
+}
+
+
+
+#tray .col-md-12 {
+// background-color: #ff6666;
+}
+
+/* Tray Style */
+#traystyle-part-one {
+    height: 50vh;
+    background-color: cyan;
+}
+
+#traystyle-part-two {
+    height: 50vh;
+//background-color: red;
+    z-index: 1;
+}
+
+#traystyle-part-one h3 {
+    margin-top: 10vh;
+}
+
+#traystyle-part-one .grouped-rectangle {
+    z-index: 100;
+}
+
+#traystyle-part-one .left-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+
+#traystyle-part-one .rounded-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+
+#traystyle-part-one .right-rectangle {
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 15vh;
+    z-index: 100;
+}
+
+/* P8  Spacing*/
+#spacing .col-md-5:first-child {
+    margin-top: 50vh;
+    transform: translateY(-50%)
+}
+
+/* P9 Tearoff*/
+#tearoff .col-md-5:first-child {
+    margin-top: 50vh;
+    transform: translateY(-50%)
+}
+
+/* Gadget Layer */
+#gadget .box-overlay > div {
+    background-color: black;
+}
+#gadget h2 {
+    color: #FFF988;
+}
+#gadget .col-md-8 {
+    background-color: #FFF988;
+    height: 100%;
+}
+
+/* Image Crop */
+#imgCrop h3, #text h3 {
+    margin-left: 50px;
+}

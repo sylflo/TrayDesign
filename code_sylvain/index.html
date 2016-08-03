@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Design Language for Bestseller</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900,200italic,300italic,400italic,600italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css"/>
+
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link rel="stylesheet" href="../from%20the%20coder/css/main.css">
+    <link rel="stylesheet" href="../from%20the%20coder/css/common.css">
+    <link rel="stylesheet" href="../from%20the%20coder/css/mobile.css">
+
+   <!-- <link rel="stylesheet" href="css/navbar-fixed-side.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">-->
+
+</head>
+
+<body>
+
+
+<div class="nav" id="container">
+    <i class="iconClose"><img src="img/icon_close.jpg" /></i>
+    <ul class="navcon ">
+        <li><a href="#homepage">Homepage</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#desktop">Desktop Layer</a></li>
+        <li><a href="#tray">Tray layer</a>
+
+            <ul class="submenu">
+                <li><a href="#traystyle">Different styles of Trays</a></li>
+                <li><a href="#spacing">Spacing</a></li>
+                <li><a href="#tearoff">Tear-off Area</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="#gadget">Gadget Layer</a>
+
+            <ul class="submenu">
+                <li><a href="#imgCrop">Image</a></li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#Buttons">Buttons</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Animation">Animation</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="#Axis">Layout Rules</a>
+
+            <ul class="submenu">
+                <li><a href="#Axis">Axis</a></li>
+                <li><a href="#SafeArea">Safe Area</a></li>
+                <li><a href="#Balance">Balance and Rhythm</a></li>
+                <li><a href="#Separate">Separate Text From Images</a></li>
+                <li><a href="#Composition">Composition</a></li>
+                <li><a href="#ThreeElements">Three Elements In One Row</a></li>
+                <li><a href="#Colors">Colors</a></li>
+
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
+
+<!--
+<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+    <div id="fullpage">
+        <div class="section">
+
+
+            <div class="content row" id="homepage">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img class="img-responsive" id="homepage-img" src="img/homepage_bg.png">
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <section>
+                        <ul id="links">
+                            <li id="only">
+                                <a href="http://www.only.cn">
+                                    <img src="img/logo_only.png">
+                                </a>
+                            </li>
+                            <li id="jj">
+                                <a href="http://www.jackjones.cn">
+                                    <img src="img/logo_jj.png">
+                                </a>
+                            </li>
+                            <li id="vm">
+                                <a href="http://www.veromoda.cn">
+                                    <img src="img/logo_vm.png">
+                                </a>
+                            </li>
+                            <li id="slt">
+                                <a href="http://www.selected.cn">
+                                    <img src="img/logo_slt.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+
+                <h1 class="title uppercase">Tray Design</h1>
+            </div>
+            <!--<div class="slide"> Slide 1</div>
+            <div class="slide"> Slide 2</div>
+            <div class="slide"> Slide 3</div>
+            <div class="slide"> Slide 4</div>-->
+     <!--   </div>
+
+
+
+    </div>
+</div>
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            scrollOverflow: true,
+            scrollOverflowOptions: null
+        });
+    });
+</script>
+</body>
+
+</html>
+
+
+
