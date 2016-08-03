@@ -137,6 +137,10 @@ li {
     z-index: 10;
 }
 
+.container-box .box h2 {
+    margin: 10px 0 0 10px;
+}
+
 .container-box .text {
     position: absolute;
     bottom: 0;
@@ -225,7 +229,7 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 }
 
 #tray h2 {
-    font-size: 1em;
+    color: orange;
 }
 
 
@@ -237,7 +241,8 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 }
 
 #tray .container-box .box {
-    background-color: yellow;
+    background-color: white;
+    border: 5px solid black;
 }
 
 
