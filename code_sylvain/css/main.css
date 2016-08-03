@@ -255,7 +255,7 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 
 
 /* TrayStyle */
-
+/*
 #tray-style {
     height: 100%;
     min-height: 100%;
@@ -265,7 +265,22 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     height: 50%;
     min-height: 50%;
     background: blue;
+    position: relative;
 }
+
+#tray-style .container-rectangle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 20%;
+}
+
+#tray .container-rectangle .left-rectangle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background: red;
+}*/
 
 
 /*
