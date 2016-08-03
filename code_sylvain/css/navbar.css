@@ -1,3 +1,75 @@
+html, body,img,div,p,span,strong,ul,li,dl,dt,dd,h1,h2,h3,h4,i,em,a,nav,section,banner,svg,path,text{ padding:0; margin:0;}
+html,body{ height:100%; font-size:20px;}
+ul,li{ list-style:none;}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+/*************************************
+font
+**************************************/
+a{ color:#000; text-decoration:none;}
+p, a,div,text {
+    font-family:'Source Sans Pro',Arial, sans-serif;
+    color: black;
+}
+
+a:link,a:visited {
+    color: black;
+}
+a:hover {
+    background-color: #f7f7f7;
+}
+
+.pos_R{ position:relative}
+.pos_A{ position:absolute}
+.fl{ float:left;}
+.fr{ float:right;}
+.mr_1{ margin-right:.5rem;}
+.mt2{ margin-top:2rem;}
+.mt4{ margin-top:4rem;}
+.mt_big{ margin-top:1rem;}
+/*************************************
+NAVIGATION
+**************************************/
+.nav {
+    position: fixed;
+    top: 0;
+    bottom:0;
+    width: 18%;
+    background-color: #fffff9;
+    box-shadow: 1px 0px 5px #888;
+    display: block;
+    overflow-y:scroll;
+    padding: 30px 0px;
+    z-index:100;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding-left: 1rem;
+    line-height:1.5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .navcon{ padding-bottom:2rem;}
+
+.nav ul li .submenu a {
+    padding-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+/* END */
+
 .iconNav{width:2.5rem; height:2.5rem;
     position:fixed;
     z-index:1000;
