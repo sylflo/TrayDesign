@@ -198,14 +198,6 @@ li {
     color: dodgerblue;
 }
 
-
-#desktop .container-box {
-    position: relative;
-    min-height: 75%;
-    height: 75%;
-    top: 12.5%;
-}
-
 #desktop .container-box .box {
     background-color: white;
     border: 5px solid black;
@@ -256,14 +248,6 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     color: orange;
 }
 
-
-#tray .container-box {
-    position: relative;
-    min-height: 75%;
-    height: 75%;
-    top: 12.5%;
-}
-
 #tray .container-box .box {
     background-color: white;
     border: 5px solid black;
@@ -293,3 +277,30 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 
 
 /* Gadget Layer */
+
+
+#gadget {
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-8 {
+    background-color: yellow;
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-4 h2 {
+    color: yellow;
+}
+
+#gadget .container-box .box {
+    background-color: white;
+    border: 5px solid black;
+}
+
