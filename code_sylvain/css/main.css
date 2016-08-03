@@ -1,10 +1,46 @@
-/* PUT IN ANOTHER FILE */
+/*html, body,img,div,p,span,strong,ul,li,dl,dt,dd,h1,h2,h3,h4,i,em,a,nav,section,banner,svg,path,text{ padding:0; margin:0;}
+html,body{ height:100%; font-size:20px;}*/
+
+ul,li,nav{
+    padding:0;
+    margin:0
+}
+html,body
+{
+    font-size:20px;
+}
+
+ul,li{ list-style:none;}
+
+/*
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; // ie8
+}*/
 
 /*************************************
 font
 **************************************/
 a{ color:#000; text-decoration:none;}
 p, a,div,text {
+    font-family:'Source Sans Pro',Arial, sans-serif;
+    color: black;
+}
+
+a:link,a:visited {
+    color: black;
+}
+a:hover {
+    background-color: #f7f7f7;
+}
+
+
+/*************************************
+font
+**************************************/
+a{ color:#000; text-decoration:none;}
+body {
     font-family:'Source Sans Pro',Arial, sans-serif;
     color: black;
 }
@@ -26,9 +62,6 @@ but elements inherits the height of their parents.
 And since the navbar is a child of html and body we need to put the height of 100% for this two elements
 so the navbar can also have a height of 100%
 */
-html, body {
-    height: 100%;
-}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -81,11 +114,6 @@ li {
     font-weight: bold;
 }
 
-
-/* Section in fullscreen */
-#homepage, #desktop, #tray, .box-left, #p7, #spacings, #tearoff, #gadget, #imgCrop, #text, #buttons {
-    height: 100vh;
-}
 
 /* So this part with the box div is a bit tricky basically I have a left div only take two column
 and on the right I have a box div with eight column and inside this I have the overlay div */
@@ -152,22 +180,6 @@ and on the right I have a box div with eight column and inside this I have the o
 }
 
 
-/* P1 */
-#p1 {
-    height: 33vh;
-}
-
-/* P2 */
-#p2 {
-    height: 33vh;
-}
-
-/* P3 */
-#p3 {
-    height: 33vh;
-}
-
-
 
 
 /* Desktop */
@@ -187,83 +199,3 @@ and on the right I have a box div with eight column and inside this I have the o
 }
 
 
-
-#tray .col-md-12 {
-// background-color: #ff6666;
-}
-
-/* Tray Style */
-#traystyle-part-one {
-    height: 50vh;
-    background-color: cyan;
-}
-
-#traystyle-part-two {
-    height: 50vh;
-//background-color: red;
-    z-index: 1;
-}
-
-#traystyle-part-one h3 {
-    margin-top: 10vh;
-}
-
-#traystyle-part-one .grouped-rectangle {
-    z-index: 100;
-}
-
-#traystyle-part-one .left-rectangle {
-    width: 100%;
-    height: 200px;
-    border: 2px solid;
-    border-radius: 25px;
-    margin-top: 15vh;
-    z-index: 100;
-}
-
-#traystyle-part-one .rounded-rectangle {
-    width: 100%;
-    height: 200px;
-    border: 2px solid;
-    border-radius: 25px;
-    margin-top: 15vh;
-    z-index: 100;
-}
-
-#traystyle-part-one .right-rectangle {
-    width: 100%;
-    height: 200px;
-    border: 2px solid;
-    border-radius: 25px;
-    margin-top: 15vh;
-    z-index: 100;
-}
-
-/* P8  Spacing*/
-#spacing .col-md-5:first-child {
-    margin-top: 50vh;
-    transform: translateY(-50%)
-}
-
-/* P9 Tearoff*/
-#tearoff .col-md-5:first-child {
-    margin-top: 50vh;
-    transform: translateY(-50%)
-}
-
-/* Gadget Layer */
-#gadget .box-overlay > div {
-    background-color: black;
-}
-#gadget h2 {
-    color: #FFF988;
-}
-#gadget .col-md-8 {
-    background-color: #FFF988;
-    height: 100%;
-}
-
-/* Image Crop */
-#imgCrop h3, #text h3 {
-    margin-left: 50px;
-}

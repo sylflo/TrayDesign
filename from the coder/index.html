@@ -10,6 +10,7 @@
 <link href="css/mobile.css" rel="stylesheet">
 <script src="css/jquery-1.7.2.js"></script>
 <script src="css/nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css"/>
 <style>
 
 </style>
@@ -63,9 +64,13 @@
     </ul>
 </div>
 <!-- homepage -->
+<div id="fullpage">
+
 <div class="swiper-container">
 	<div class="swiper-wrapper">
-        <div class="swiper-slide" id="homepage">
+
+
+        <div class="section" id="homepage">
                 <p>Digital Design Language for BESTSELLER</p>
             
                 <ul class="links_logo">
@@ -91,16 +96,19 @@
                     </li>
                 </ul>
         </div>
-        <div class="swiper-slide" id="p1">
+        </div>
+
+        <div class="section" id="p1">
     
             <div id="p1container">
                 <p class="centered-title">Why modern enterprises create their own design language?</p>
                 <div class="rec"></div>
             </div>
         </div>
+
         
         <!-- P2 -->
-        <div class="swiper-slide" id="p2">            
+        <div class="section" id="p2">
             <div class="p2container">
                 <p class="centered-title">Designing for different platforms,<br>stay aligned</p>
                 <div class="rec rec2"></div>
@@ -114,7 +122,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- P3 Overview -->
         <div class="swiper-slide" id="overview">
             <div id="p3container">
@@ -135,7 +143,7 @@
                 </div>                
             </div>        
         </div>
-        
+
         <!--P4 Desktop -->
         <div class="swiper-slide" id="desktop">
             <div id="p4bg">
@@ -203,7 +211,7 @@
             </div>            
         </div>
 
-        <!-- P9 Tearoff -->        
+        <!-- P9 Tearoff -->
         <div class="swiper-slide" id="tearoff">
             <div class="p8spacing">
                 <div class="p8con">
@@ -405,7 +413,24 @@ technique.</p>
 </div>
 
 
+</div>
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            scrollOverflow: true,
+            scrollOverflowOptions: null
+        });
+    });
+</script>
 
 <!-- Swiper JS -->
 <script src="css/swiper.min.js"></script>
