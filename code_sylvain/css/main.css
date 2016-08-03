@@ -150,6 +150,8 @@ li {
     width: 100%;
     margin: 0 0 0 10px;
     overflow-y: scroll;
+    height: 100%;
+    min-height: 100%;
 
 }
 
@@ -268,6 +270,20 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 }
 
 #tray .container-box .text {
+
+}
+
+/* TrayStyle */
+
+#tray-style {
     height: 100%;
-    min-height: 100%;
+}
+
+#tray-style .part-one {
+    height: 50%;
+    background: blue;
+}
+
+#tray .part-two {
+    background: red;
 }

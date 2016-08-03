@@ -73,6 +73,15 @@
 </div>
 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+    </ul>
+
+
     <div id="fullpage">
 
         <!--      <div class="section">-->
@@ -224,11 +233,12 @@
                         <div class="box">
                             <h2 class="title uppercase">Desktop <br>Layer</h2>
                         </div>
-                        <div class="text">No matter when, the desktop is the layer that connects the “surface” of
+                        <p class="text">
+                            No matter when, the desktop is the layer that connects the “surface” of
                             screens with the “virtualized” content we present. Although we usually do not “watch” the
                             wooden tea table and the texture on it, but the “feeling” and “tone” is still “seen” by our
                             subconscious.
-                        </div>
+                        </p>
                     </div>
 
                 </div>
@@ -236,11 +246,13 @@
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <div class="hidden-sm hidden-md hidden-lg">
                         <h2 class="title uppercase">Desktop Layer</h2>
-                        <p class="text">
-                            No matter when, the desktop is the layer that connects the “surface” of
-                            screens with the “virtualized” content we present. Although we usually do not “watch” the
-                            wooden tea table and the texture on it, but the “feeling” and “tone” is still “seen” by our
-                            subconscious.</p>
+                            <p class="text">
+                                No matter when, the desktop is the layer that connects the “surface” of
+                                screens with the “virtualized” content we present. Although we usually do not “watch”
+                                the
+                                wooden tea table and the texture on it, but the “feeling” and “tone” is still “seen” by
+                                our
+                                subconscious.</p>
                     </div>
 
                 </div>
@@ -320,6 +332,18 @@
             </div>
         </div>
 
+        <!-- P6 Tray's style -->
+        <div class="section">
+            <div id="tray-style">
+                <div class="part-one">
+
+                </div>
+                <div class="part-two">
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -342,6 +366,19 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#fullpage').fullpage({
+
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors:['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
             scrollOverflow: true,
             scrollOverflowOptions: null,
             normalScrollElements: '#element1, .element2, .text'
