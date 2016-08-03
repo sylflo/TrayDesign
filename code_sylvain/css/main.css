@@ -1,16 +1,18 @@
 /*html, body,img,div,p,span,strong,ul,li,dl,dt,dd,h1,h2,h3,h4,i,em,a,nav,section,banner,svg,path,text{ padding:0; margin:0;}
 html,body{ height:100%; font-size:20px;}*/
 
-ul,li,nav{
-    padding:0;
-    margin:0
-}
-html,body
-{
-    font-size:20px;
+ul, li, nav {
+    padding: 0;
+    margin: 0
 }
 
-ul,li{ list-style:none;}
+html, body {
+    font-size: 20px;
+}
+
+ul, li {
+    list-style: none;
+}
 
 /*
 img {
@@ -22,37 +24,44 @@ img {
 /*************************************
 font
 **************************************/
-a{ color:#000; text-decoration:none;}
-p, a,div,text {
-    font-family:'Source Sans Pro',Arial, sans-serif;
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p, a, div, text {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     color: black;
 }
 
-a:link,a:visited {
+a:link, a:visited {
     color: black;
 }
+
 a:hover {
     background-color: #f7f7f7;
 }
-
 
 /*************************************
 font
 **************************************/
-a{ color:#000; text-decoration:none;}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 body {
-    font-family:'Source Sans Pro',Arial, sans-serif;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     color: black;
 }
 
-a:link,a:visited {
+a:link, a:visited {
     color: black;
 }
+
 a:hover {
     background-color: #f7f7f7;
 }
-
-
 
 /* General */
 
@@ -74,8 +83,6 @@ h1 {
 h2 {
     font-size: 2em;
 }
-
-
 
 /* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
 in the html code cos that's really a bad practice */
@@ -114,56 +121,6 @@ li {
     font-weight: bold;
 }
 
-
-/* So this part with the box div is a bit tricky basically I have a left div only take two column
-and on the right I have a box div with eight column and inside this I have the overlay div */
-
-
-/* For the overlay div we put a position so you can place your elements wherever you want
- And the z-index put put the element in front of other */
-.box-overlay {
-    position:absolute;
-    z-index:5;
-    font-size: 2em;
-//padding: 100px 0 0 10px;
-}
-
-/* So after you select the overlay div and all his direct children
- and apply a relative position.
- The properties in the end using vh let me chose the height I want and vertical center the element inside the div
- */
-.box-overlay > div {
-    background:white;
-    position: relative;
-    left: -40vh;
-    width : 70vh;
-    height : 70vh;
-    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-    transform: translateY(-50%)
-}
-
-.desc-box {
-  /*  position: absolute;
-    z-index: 5;
-    width: 100%;*/
-    overflow: scroll;
-    position:absolute;
-    height:calc(100% - 100px);
-    width:100%;
-
-}
-
-.desc-box > div {
-    position: relative;
-    overflow: scroll;
-    //margin-top: 20%;
-}
-
-.inside-overlay {
-    padding: 10px 0 0 10px;
-    border: 10px solid black;
-}
-
 /* Homepage */
 
 #homepage {
@@ -185,9 +142,6 @@ and on the right I have a box div with eight column and inside this I have the o
     left: 10px;
 }
 
-
-
-
 /* Desktop */
 #desktop {
     height: 100vh;
@@ -201,18 +155,25 @@ and on the right I have a box div with eight column and inside this I have the o
 #desktop h2 {
     font-size: 1em;
 }
+
 /* Tray */
 
-
 #tray {
-height: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray .col-md-4 {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
 }
 
 #tray .col-md-8 {
     background-color: orange;
     height: 100%;
+    min-height: 100%;
 }
-
 
 #tray h2 {
     font-size: 1em;
