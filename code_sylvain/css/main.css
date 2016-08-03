@@ -158,27 +158,6 @@ li {
 
 /* Tray */
 
-#tray {
-    height: 100%;
-    min-height: 100%;
-}
-
-#tray .col-md-4 {
-    height: 100%;
-    min-height: 100%;
-}
-
-#tray .col-md-8 {
-    background-color: orange;
-    height: 100%;
-    min-height: 100%;
-}
-
-#tray h2 {
-    font-size: 1em;
-}
-
-
 /* So this is an example following the design for the tray (so you can see the problem
  On your design you have a box over a background color so to do this we need to position our elements in specific position
 
@@ -199,14 +178,36 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
  If you want to do something cool maybe when you click on the box it'll open a modal. For now I'll do something quick
  following the design when possible cos I don't want to have something non responsive
  */
-#tray .container-box {
+
+#tray-demo {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray-demo .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray-demo .col-md-8 {
+    background-color: orange;
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray-demo h2 {
+    font-size: 1em;
+}
+
+
+#tray-demo .container-box {
     position: relative;
     min-height: 75%;
     height: 75%;
     top: 12.5%;
 }
 
-#tray .container-box .box {
+#tray-demo .container-box .box {
     position: absolute;
     width: 200px;
     height: 100%;
@@ -215,7 +216,7 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     z-index: 10;
 }
 
-#tray .container-box .text {
+#tray-demo .container-box .text {
    position: absolute;
     bottom: 0;
     z-index: 10;
