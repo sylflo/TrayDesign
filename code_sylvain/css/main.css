@@ -1,5 +1,6 @@
-/*html, body,img,div,p,span,strong,ul,li,dl,dt,dd,h1,h2,h3,h4,i,em,a,nav,section,banner,svg,path,text{ padding:0; margin:0;}
-html,body{ height:100%; font-size:20px;}*/
+/********************************
+General
+********************************/
 
 ul, li, nav {
     padding: 0;
@@ -7,7 +8,7 @@ ul, li, nav {
 }
 
 html, body {
-    font-size: 20px;
+    font-size: 20px; /* Should use em I think the font size in the different section is probably too big */
 }
 
 ul, li {
@@ -18,20 +19,11 @@ ul, li {
     margin:0 auto;
 }
 
-.margin-left {
-    margin-left: 100px;
-}
-
-/*
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; // ie8
-}*/
 
 /*************************************
 font
 **************************************/
+
 a {
     color: #000;
     text-decoration: none;
@@ -50,39 +42,16 @@ a:hover {
     background-color: #f7f7f7;
 }
 
-/*************************************
-font
-**************************************/
-a {
-    color: #000;
-    text-decoration: none;
-}
-
 body {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     color: black;
 }
 
-a:link, a:visited {
-    color: black;
-}
 
-a:hover {
-    background-color: #f7f7f7;
-}
 
-/* General */
-
-/*
-So we want the navbar to take the full height of the screen
-but elements inherits the height of their parents.
-And since the navbar is a child of html and body we need to put the height of 100% for this two elements
-so the navbar can also have a height of 100%
-*/
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+/********************************
+Header and classic useful class
+********************************/
 
 h1 {
     font-size: 5em;
@@ -102,12 +71,7 @@ in the html code cos that's really a bad practice */
     font-weight: bold;
 }
 
-/* Remove the circle things for the list */
-li {
-    list-style: none;
-}
-
-/* I' using just one class so you can change the size for every box in once */
+/* I' using just one class so we can change the size for every box in once */
 .rec {
     height: 3px;
     width: 40%;
@@ -129,7 +93,9 @@ li {
     font-weight: bold;
 }
 
-/* Layers (for now that's the most tricky part of the website) and check the tray part */
+/********************************
+LAYERS (for now that's the most tricky part of the website), check the tray part for more information
+********************************/
 
 .container-box {
     position: relative;
@@ -164,13 +130,16 @@ li {
 }
 
 
-/* Homepage */
+/********************************
+Hompage
+********************************/
 
 #homepage {
     position: relative;
     height: 100%;
 }
-
+/* Since I'm very lazy I'm using the child selector here I select the first child of #homepage .col-lg-6
+so I don't create a class or an id for this case */
 #homepage .col-lg-6:first-child {
     padding-left: 0;
 }
@@ -185,7 +154,9 @@ li {
     left: 10px;
 }
 
-/* Desktop */
+/********************************
+Desktop
+********************************/
 #desktop {
     height: 100%;
     min-height: 100%;
@@ -213,8 +184,9 @@ li {
 
 
 
-/* Tray */
-
+/********************************
+Tray
+********************************/
 /* So this is an example following the design for the tray (so you can see the problem
  On your design you have a box over another element so to do this we need to position our elements in specific position
 
@@ -260,7 +232,9 @@ So for now I can solve the responsive problem but I can't put the text at the bo
     border: 5px solid black;
 }
 
-
+/********************************
+TrayStyle
+********************************/
 /* TrayStyle */
 /*
 #tray-style {
@@ -298,9 +272,10 @@ So for now I can solve the responsive problem but I can't put the text at the bo
 }*/
 
 
-/* Gadget Layer */
 
-
+/********************************
+Gadget
+********************************/
 #gadget {
     height: 100%;
     min-height: 100%;
