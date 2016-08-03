@@ -286,14 +286,13 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     background: blue;
 }
 
-#tray-styl .part-two {
-    height: 30%;
-    min-height: 50%;
-    background: red;
-}
+
 /*
 .container-rectangle .col-md-4 {
     width: 200px;
     height: 200px;
     background: purple;
 }*/
+
+
+/* Gadget Layer */
