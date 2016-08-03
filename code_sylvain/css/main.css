@@ -109,6 +109,7 @@ LAYERS (for now that's the most tricky part of the website), check the tray part
     width: 200px;
     height: 100%;
     left: calc(33.33333333% + 100px);
+    left: -webkit-calc(33.33333333% + 100px);
     z-index: 10;
 }
 
@@ -119,7 +120,8 @@ LAYERS (for now that's the most tricky part of the website), check the tray part
 .container-box .text {
        position: absolute;
     bottom: 0;
-    left: calc(calc(33.33333333% + 300px));
+    left: calc(33.33333333% + 300px);
+    left: -webkit-calc(33.33333333% + 300px);
     z-index: 10;
     width: 100%;
     margin: 0 0 0 10px;
