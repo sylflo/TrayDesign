@@ -1,0 +1,54 @@
+.iconNav{width:2.5rem; height:2.5rem;
+    position:fixed;
+    z-index:1000;
+    top:.4rem;
+    left:.4rem;
+    cursor:pointer;
+    display:none;
+}
+.iconNav img{ width:100%;}
+.iconClose{ display:none;}
+
+
+@media (max-width:640px){
+    .swiper-container {
+        width:100%;
+    }
+    .iconNav{ display:block;}
+    .nav{
+        width:auto;
+        top:.4rem;
+        left:-100%;
+        bottom:auto;
+        width:2rem;
+        height:2rem;
+        background-color: #fffff9;
+        box-shadow:none;
+        display: block;
+        overflow-y:visible;
+        padding:0px;
+        transition:all .5s ease;
+    }
+    /*.nav .navcon{ display:none;}*/
+
+    .navAfter{
+        width:100%; height:100%;
+        top:0;
+        left:0;
+        bottom:0;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        padding:1.5rem 0;
+    }
+
+    .iconClose{ position:absolute; right:.4rem; top:.4rem;
+        width:2rem;
+        height:2rem;
+        cursor:pointer;
+        display:block;
+    }
+}
+
+
+
+
