@@ -216,7 +216,7 @@
             </div>
 
             <!--P5 Tray -->
-          <!--<div class="section">
+          <div class="section">
 
                 <div class="content row" id="tray-demo">
                     <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
@@ -267,7 +267,7 @@
 
                 </div>
             </div>
-        -->
+
         </div>
     </div>
 
@@ -291,7 +291,8 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 scrollOverflow: true,
-                scrollOverflowOptions: null
+                scrollOverflowOptions: null,
+                normalScrollElements: '#element1, .element2, .text'
             });
         });
     </script>

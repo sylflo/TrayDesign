@@ -223,6 +223,9 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
     left: calc(calc(33.33333333% + 300px));
     width: 100%;
     margin: 0 0 0 10px;
+    overflow-y: scroll;
+    height: 100%;
+    min-height: 100%;
 }
 
 
