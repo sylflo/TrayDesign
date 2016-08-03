@@ -277,13 +277,23 @@ Doing fullscreen mode is cool but because of responsive you will have some stron
 
 #tray-style {
     height: 100%;
+    min-height: 100%;
 }
 
 #tray-style .part-one {
     height: 50%;
+    min-height: 50%;
     background: blue;
 }
 
-#tray .part-two {
+#tray-styl .part-two {
+    height: 30%;
+    min-height: 50%;
     background: red;
 }
+/*
+.container-rectangle .col-md-4 {
+    width: 200px;
+    height: 200px;
+    background: purple;
+}*/
