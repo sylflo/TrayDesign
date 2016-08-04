@@ -199,13 +199,13 @@ Desktop
 }
 
 #desktop .col-md-8 {
-    background-color: dodgerblue;
+    background-color: #66FF99;
     height: 100%;
     min-height: 100%;
 }
 
 #desktop .col-md-4 h2 {
-    color: dodgerblue;
+    color: #66FF99;
 }
 
 #desktop .container-box .box {
