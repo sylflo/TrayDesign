@@ -1,7 +1,15 @@
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
     h1 {
         font-size: 4.5em;
+    }
+
+    /*
+So that's a bit dirty I'll explain to you later.
+It's for debugging cos bootstrap is applying a padding and in responsive mode a seciton is buggy
+*/
+    .col-xs-offset-0 {
+        padding: 0;
     }
 
 }
