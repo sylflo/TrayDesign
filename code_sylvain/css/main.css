@@ -4,11 +4,18 @@ General
 
 ul, li, nav {
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
+/* So I don't like this but we need it cos it breaks the navbar if we don"t use it
+The reason why I don't like it we are applying a font-size to the document html and body and also to all the child
+elements of these two objects
+
+But later we will change the h1 and h2 and others so I find it a bit ugly
+*/
+
 html, body {
-    font-size: 20px; /* Should use em I think the font size in the different section is probably too big */
+    font-size: 20px;
 }
 
 ul, li {
@@ -47,7 +54,13 @@ body {
     color: black;
 }
 
-
+/*
+So that's a bit dirty I'll explain to you later.
+It's for debugging cos bootstrap is applying a padding and in responsive mode a seciton is buggy
+*/
+.col-xs-offset-0 {
+    padding: 0;
+}
 
 /********************************
 Header and classic useful class
@@ -55,10 +68,19 @@ Header and classic useful class
 
 h1 {
     font-size: 5em;
+    margin-left: 25px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+.text {
+    font-size: 0.8em;
 }
 
 /* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
@@ -154,6 +176,13 @@ so I don't create a class or an id for this case */
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+/********************************
+P1, P2 and Overview
+********************************/
+#p1 p.title, #p2 p.title, #overview p.title {
+    font-size: 2em;
 }
 
 /********************************
