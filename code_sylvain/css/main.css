@@ -322,3 +322,68 @@ Gadget
     background: -o-gradient(linear, left top, right bottom, color-stop(1%, grey), color-stop(52%, grey), color-stop(52%, red), color-stop(52%, red), color-stop(100%, red));
     background: gradient(linear, left top, right bottom, color-stop(1%, grey), color-stop(52%, grey), color-stop(52%, red), color-stop(52%, red), color-stop(100%, red));
 }*/
+
+/********************************
+Colors
+********************************/
+#colors {
+    height: 100%;
+    min-height: 100%;
+}
+
+#colors .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+    background-color: dodgerblue;
+}
+
+#colors .col-md-8 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#colors .col-md-4 h2 {
+}
+
+
+#colors .container-box {
+    position: relative;
+    min-height: 75%;
+    height: 75%;
+    top: calc(100 - (75% / 2));
+    top: -webkit-calc(100 - (75% / 2));
+
+}
+
+#colors .container-box .box h2 {
+    margin: 10px 0 0 10px;
+}
+
+#colors .container-box .circle-left {
+    position: absolute;
+
+    left: calc(33.33333333% + 100px);
+    left: -webkit-calc(33.33333333% + 100px);
+    z-index: 10;
+
+    width: 12.8rem;
+    height: 12.8rem;
+    border-radius: 50%;
+    border: .15rem solid #000
+}
+
+
+#colors .container-box .circle-right {
+    position: absolute;
+    left: calc(33.33333333% + 300px);
+    left: -webkit-calc(33.33333333% + 300px);
+    z-index: 10;
+
+
+    width: 12.8rem;
+    height: 12.8rem;
+    border-radius: 50%;
+    border: .15rem solid #000
+
+}
+
