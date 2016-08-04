@@ -63,9 +63,12 @@ It's for debugging cos bootstrap is applying a padding and in responsive mode a 
 }
 
 /********************************
-Header and classic useful class
+Font-size
 ********************************/
 
+/* So here you can change the font-size
+check also this selector ".container-box .box h2" for the header inside the box
+*/
 h1 {
     font-size: 5em;
     margin-left: 25px;
@@ -79,8 +82,21 @@ h3 {
     font-size: 3em;
 }
 
+
 .text {
     font-size: 0.8em;
+}
+
+#p1 p.title, #p2 p.title, #overview p.title {
+    font-size: 2em;
+}
+
+/********************************
+Header and classic useful class
+********************************/
+
+.icon {
+    margin-bottom: 20px;
 }
 
 /* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
@@ -177,13 +193,6 @@ so I don't create a class or an id for this case */
     position: absolute;
     bottom: 10px;
     left: 10px;
-}
-
-/********************************
-P1, P2 and Overview
-********************************/
-#p1 p.title, #p2 p.title, #overview p.title {
-    font-size: 2em;
 }
 
 /********************************
