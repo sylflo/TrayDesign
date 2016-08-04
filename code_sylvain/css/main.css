@@ -249,13 +249,13 @@ So for now I can solve the responsive problem but I can't put the text at the bo
 }
 
 #tray .col-md-8 {
-    background-color: orange;
+    background-color: #ff6950;
     height: 100%;
     min-height: 100%;
 }
 
 #tray .col-md-4 h2 {
-    color: orange;
+    color: #ff6950;
 }
 
 #tray .container-box .box {
