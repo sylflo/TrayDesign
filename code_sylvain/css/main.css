@@ -318,13 +318,13 @@ Gadget
 }
 
 #gadget .col-md-8 {
-    background-color: yellow;
+    background-color: #FFF988;
     height: 100%;
     min-height: 100%;
 }
 
 #gadget .col-md-4 h2 {
-    color: yellow;
+    color: #FFF988;
 }
 
 #gadget .container-box .box {
