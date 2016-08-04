@@ -369,13 +369,14 @@ Colors
     width: 12.8rem;
     height: 12.8rem;
     border-radius: 50%;
-    border: .15rem solid #000
+    border: .15rem solid #000;
+    background-color: black;
 }
 
 
 #colors .container-box .circle-right {
     position: absolute;
-    left: calc(33.33333333% + 300px);
+    left: calc(33.33333333% + 100.8rem);
     left: -webkit-calc(33.33333333% + 300px);
     z-index: 10;
 
@@ -383,7 +384,6 @@ Colors
     width: 12.8rem;
     height: 12.8rem;
     border-radius: 50%;
-    border: .15rem solid #000
-
+    border: .15rem solid #000;
 }
 

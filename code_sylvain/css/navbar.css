@@ -50,7 +50,8 @@ NAVIGATION
 .iconClose{ display:none;}
 
 
-@media (max-width:640px){
+/* I'm using the same size as bootstrap to keep the website reacts logical */
+@media (max-width:768px){
     .swiper-container {
         width:100%;
     }
