@@ -23,7 +23,7 @@ ul, li {
 }
 
 .img-center {
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /*
@@ -61,7 +61,6 @@ body {
     color: black;
 }
 
-
 /********************************
 Font-size
 ********************************/
@@ -81,7 +80,6 @@ h2 {
 h3 {
     font-size: 3em;
 }
-
 
 .text {
     font-size: 0.8em;
@@ -170,7 +168,6 @@ LAYERS (for now that's the most tricky part of the website), check the tray part
 
 }
 
-
 /********************************
 Hompage
 ********************************/
@@ -179,6 +176,7 @@ Hompage
     position: relative;
     height: 100%;
 }
+
 /* Since I'm very lazy I'm using the child selector here I select the first child of #homepage .col-lg-6
 so I don't create a class or an id for this case */
 #homepage .col-lg-6:first-child {
@@ -222,8 +220,6 @@ Desktop
     background-color: white;
     border: 5px solid black;
 }
-
-
 
 /********************************
 Tray
@@ -278,7 +274,6 @@ TrayStyle
 ********************************/
 /* TrayStyle */
 
-
 #tray-style {
     height: 100%;
     min-height: 100%;
@@ -325,7 +320,6 @@ TrayStyle
     border: 2px solid black;
 }
 
-
 #tray-style .tray-style-top .container-rectangles .middle-rectangle {
     width: 20%;
     height: 100%;
@@ -335,7 +329,6 @@ TrayStyle
     border-radius: 10px;
 }
 
-
 #tray-style .tray-style-top .container-rectangles .right-rectangle {
     width: 15%;
     height: 200%;
@@ -344,7 +337,6 @@ TrayStyle
     margin-top: -5%;
     border: 2px solid black;
 }
-
 
 #tray-style .tray-style-top .container-legend {
     position: absolute;
@@ -368,7 +360,6 @@ TrayStyle
     text-align: center;
 }
 
-
 #tray-style .tray-style-top .container-legend .middle-legend {
     width: 20%;
     z-index: 10;
@@ -376,15 +367,12 @@ TrayStyle
     text-align: center;
 }
 
-
 #tray-style .tray-style-top .container-legend .right-legend {
     width: 15%;
     z-index: 10;
     float: left;
     text-align: center;
 }
-
-
 
 /********************************
 Gadget
@@ -418,11 +406,9 @@ Gadget
     background-color: black;
 }
 
-
 /********************************
 Layout Rules
 ********************************/
-
 
 #layout-rules {
     height: 100%;
@@ -471,7 +457,17 @@ Colors
     min-height: 100%;
 }
 
-#colors .circle-left, #colors .circle-right {
+#colors .container-title {
+    position: relative;
+}
+
+#colors .container-title .title {
+    position: absolute;
+    top: 15%;
+    margin-left: 15%;
+}
+
+#colors .container-circles .circle-left, #colors .container-circles .circle-right {
     position: absolute;
     height: 200px;
     width: 200px;
@@ -485,24 +481,30 @@ Colors
     left: -webkit-calc(33.33333% - 100px);
 }
 
-#colors .circle-left {
+#colors .container-circles .circle-left {
     background-color: black;
 }
 
-#colors .circle-right {
+#colors .container-circles .circle-right {
     background-color: white;
     margin-left: 33.33333%;
-    //margin-left: -webkit-calc();
-
 }
 
-#colors .container-title {
-    position: relative;
-}
-
-#colors .container-title .title {
+#colors .container-circles .left-legend, #colors .container-circles .right-legend {
     position: absolute;
-    top: 15%;
-    margin-left: 16%;
+    left: calc(33.33333% - 40px);
+    left: -webkit-calc(33.33333% - 40px);
+    top: 77%;
+    z-index: 20;
 }
 
+#colors .container-circles .right-legend {
+    margin-left: 33.33333%;
+}
+
+#colors .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+}
