@@ -296,6 +296,12 @@ TrayStyle
     min-height: 50%;
 }
 
+#tray-style .tray-style-top .title {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+
 #tray-style .tray-style-top .container-rectangles {
     position: absolute;
     top: 75%;
