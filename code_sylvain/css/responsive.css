@@ -46,4 +46,15 @@
     }
 
 
+    #colors {
+        display: none;
+    }
+
+    #colors-xs {
+        background-color: #99CCFF;
+       /* min-height: 100%;
+        height: 100%;*/
+    }
+
+
 }
