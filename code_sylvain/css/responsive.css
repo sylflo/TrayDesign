@@ -17,5 +17,35 @@ It's for debugging cos bootstrap is applying a padding and in responsive mode a 
         min-height: inherit;
     }
 
+    #tray-style .container-rectangles-xs {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #tray-style .container-rectangles-xs .top-rectangle {
+        border: 2px solid black;
+        margin-top: 10px;
+        height: 100px;
+    }
+
+
+    #tray-style .container-rectangles-xs .middle-rectangle {
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+        height: 100px;
+    }
+
+
+    #tray-style .container-rectangles-xs .bottom-rectangle {
+        border: 2px solid black;
+        margin-top: 35%;
+        height: 100px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
 
 }
