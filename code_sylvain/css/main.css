@@ -496,5 +496,13 @@ Colors
 
 }
 
+#colors .container-title {
+    position: relative;
+}
 
+#colors .container-title .title {
+    position: absolute;
+    top: 15%;
+    margin-left: 16%;
+}
 
