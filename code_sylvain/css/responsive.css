@@ -48,4 +48,9 @@ It's for debugging cos bootstrap is applying a padding and in responsive mode a 
         transform: rotate(90deg);
     }
 
+    #tray-style .container-rectangles-xs .bottom-legend {
+        margin-top: 20%;
+    }
+
+
 }
