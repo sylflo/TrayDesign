@@ -457,6 +457,7 @@ Colors
 #colors {
     height: 100%;
     min-height: 100%;
+    position: relative;
 }
 
 #colors .col-md-4 {
@@ -469,5 +470,31 @@ Colors
     height: 100%;
     min-height: 100%;
 }
+
+#colors .circle-left, #colors .circle-right {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    z-index: 10;
+    top: calc(50% - 100px);
+    top: -webkit-calc(50% - 100px);
+    left: calc(33.33333% - 100px);
+    left: -webkit-calc(33.33333% - 100px);
+}
+
+#colors .circle-left {
+    background-color: black;
+}
+
+#colors .circle-right {
+    background-color: white;
+    margin-left: 33.33333%;
+    //margin-left: -webkit-calc();
+
+}
+
 
 
