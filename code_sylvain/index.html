@@ -37,10 +37,10 @@
     <div class="nav" id="container">
         <i class="iconClose"><img src="img/icon_close.jpg"/></i>
         <ul class="navcon ">
-            <li data-menuanchor="homepage-nav" class="active"><a href="#homepage-nav">Homepage</a></li>
-            <li data-menuanchor="overview"><a href="#overview">Overview</a></li>
-            <li data-menuanchor="desktop-nav"><a href="#desktop-nav">Desktop Layer</a></li>
-            <li data-menuanchor="tray-nav"><a href="#tray-nav">Tray layer</a>
+            <li><a href="#homepage-nav">Homepage</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#desktop-nav">Desktop Layer</a></li>
+            <li ><a class="js-scroll-to" href="#tray-nav">Tray layer</a>
 
                 <ul class="submenu">
                     <li data-menuanchor="tray-style"><a href="#tray-style">Different styles of Trays</a></li>
@@ -839,10 +839,7 @@ remove-padding">
         $('#fullpage').fullpage({
 
             //Navigation
-            menu: '.nav',
-            lockAnchors: false,
-            anchors: ['homepage-nav', 'overview', 'desktop-nav', 'tray-nav'],
-            css3: true,
+
 
             //Scrolling
             scrollingSpeed: 1000,
@@ -852,6 +849,7 @@ remove-padding">
         });
     });
 </script>
+
 
 <script type="text/javascript" src="js/nav.js"></script>
 
