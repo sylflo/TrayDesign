@@ -90,6 +90,9 @@ NAVIGATION
     }
 }
 
+.nav::-webkit-scrollbar {
+    display: none;
+}
 
 
 
