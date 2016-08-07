@@ -26,6 +26,10 @@ ul, li {
     margin: 0 auto;
 }
 
+.img-resize {
+    max-width: 70%;
+}
+
 /*
 So that's a bit dirty I'll explain to you later.
 It's for debugging cos bootstrap is applying a padding and in responsive mode a section is buggy
