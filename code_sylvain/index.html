@@ -37,10 +37,10 @@
     <div class="nav" id="container">
         <i class="iconClose"><img src="img/icon_close.jpg"/></i>
         <ul class="navcon ">
-            <li><a href="#homepage-nav">Homepage</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#desktop-nav">Desktop Layer</a></li>
-            <li><a href="#tray-nav">Tray layer</a>
+            <li data-menuanchor="homepage-nav" class="active"><a href="#homepage-nav">Homepage</a></li>
+            <li data-menuanchor="overview"><a href="#overview">Overview</a></li>
+            <li data-menuanchor="desktop-nav"><a href="#desktop-nav">Desktop Layer</a></li>
+            <li data-menuanchor="tray-nav"><a href="#tray-nav">Tray layer</a>
 
                 <ul class="submenu">
                     <li><a href="#tray-style">Different styles of Trays</a></li>
@@ -841,15 +841,11 @@ remove-padding">
             //Navigation
             menu: '.nav',
             lockAnchors: false,
-            anchors: ['firstPage', 'secondPage'],
-            navigation: false,
-            navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: false,
-            slidesNavigation: true,
-            slidesNavPosition: 'bottom',
+            anchors: ['homepage-nav', 'overview', 'desktop-nav', 'tray-nav'],
+            css3: true,
 
             //Scrolling
+            scrollingSpeed: 1000,
             scrollOverflow: true,
             scrollOverflowOptions: null,
             normalScrollElements: '.text'
