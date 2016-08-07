@@ -72,6 +72,11 @@ Font-size
 /* So here you can change the font-size
 check also this selector ".container-box .box h2" for the header inside the box
 */
+
+.margin-bottom-title {
+    margin-bottom: 10%;
+}
+
 h1 {
     font-size: 5em;
     margin-left: 25px;
