@@ -1,0 +1,525 @@
+/********************************
+General
+********************************/
+
+ul, li, nav {
+    padding: 0;
+    margin: 0;
+}
+
+/* So I don't like this but we need it cos it breaks the navbar if we don"t use it
+The reason why I don't like it we are applying a font-size to the document html and body and also to all the child
+elements of these two objects
+
+But later we will change the h1 and h2 and others so I find it a bit ugly
+*/
+
+html, body {
+    font-size: 20px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.img-resize {
+    max-width: 70%;
+}
+
+/*
+So that's a bit dirty I'll explain to you later.
+It's for debugging cos bootstrap is applying a padding and in responsive mode a section is buggy
+*/
+.remove-padding {
+    padding: 0;
+}
+
+
+/*************************************
+font
+**************************************/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p, a, div, text {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    background-color: #f7f7f7;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+}
+
+/********************************
+Font-size
+********************************/
+
+/* So here you can change the font-size
+check also this selector ".container-box .box h2" for the header inside the box
+*/
+
+.margin-bottom-title {
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-left: 25px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.text {
+    font-size: 0.8em;
+}
+
+#p1 p.title, #p2 p.title, #overview p.title {
+    font-size: 1.5em;
+}
+
+/********************************
+Header and classic useful class
+********************************/
+
+.icon {
+    margin-bottom: 20px;
+}
+
+/* If you need to have a sentence/words in uppercase it's better to use this css property than put in hardcoded
+in the html code cos that's really a bad practice */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* I' using just one class so we can change the size for every box in once */
+.rec {
+    height: 6px;
+    width: 20%;
+    margin: 10px auto 20px auto;
+
+}
+
+.orange {
+    background: #ff6666;
+}
+
+.green {
+    background: #66FF99;
+}
+
+.green-font {
+    color: #66FF99;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/********************************
+LAYERS (for now that's the most tricky part of the website), check the tray part for more information
+********************************/
+
+.container-box {
+    position: relative;
+    min-height: 75%;
+    height: 75%;
+    top: 12.5%;
+}
+
+.container-box .box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: calc(100% / 2);
+    left: -webkit-calc(100% / 2);
+    /*left: calc(33.33333333% + 100px);
+    left: -webkit-calc(33.33333333% + 100px);*/
+    z-index: 10;
+}
+
+.container-box .box h2 {
+    margin: 10px 0 0 10px;
+    font-size: 2em;
+}
+
+.container-box .text {
+    position: absolute;
+    bottom: 0;
+    left: calc(115% + 33.33333%);
+    left: -webkit-calc(115% + 33.33333%);
+   /* left: calc(33.33333333% + 300px);
+    left: -webkit-calc(33.33333333% + 300px);*/
+    z-index: 10;
+    width: 100%;
+    margin: 0 0 0 30px;
+    overflow-y: scroll;
+    height: 100%;
+    min-height: 100%;
+
+}
+
+/********************************
+Hompage
+********************************/
+
+#homepage {
+    position: relative;
+    height: 100%;
+}
+
+/* Since I'm very lazy I'm using the child selector here I select the first child of #homepage .col-lg-6
+so I don't create a class or an id for this case */
+#homepage .col-lg-6:first-child {
+    padding-left: 0;
+}
+
+#homepage:nth-child(1) {
+    text-align: right;
+}
+
+#homepage h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 30px;
+}
+
+/********************************
+Desktop
+********************************/
+#desktop {
+    height: 100%;
+    min-height: 100%;
+}
+
+#desktop .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#desktop .col-md-8 {
+    background-color: #66FF99;
+    height: 100%;
+    min-height: 100%;
+}
+
+#desktop .col-md-4 h2 {
+    color: #66FF99;
+}
+
+#desktop .container-box .box {
+    background-color: white;
+    border: 5px solid black;
+}
+
+/********************************
+Tray
+********************************/
+/* So this is an example following the design for the tray (so you can see the problem
+ On your design you have a box over another element so to do this we need to position our elements in specific position
+
+ First I separate the screens in two part on of the left (the white background) and on the right (the orange background)
+
+ After I have a class .container-box which contains the box and the text I apply a position:relative on it
+ In this class I separate it in two .box et .text on those two classes I apply a position: absolute
+
+ So since the parent class is in position:relative and the child in position absolute it means the childs depend
+ of the position of the parent. The origin is the top left of the parent
+
+
+So the bug we have and it's why I need to have a scrollbar when the height is too small.
+So on this example you can see (by removing the overflow-x:scroll see the layers section)
+that if the content is bigger than the container (the screen) it will overlap over section.
+
+Doing fullscreen mode is cool but because of responsive you will have some strong limitations
+So for now I can solve the responsive problem but I can't put the text at the bottom of the square
+ */
+
+#tray {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray .col-md-8 {
+    background-color: #ff6950;
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray .col-md-4 h2 {
+    color: #ff6950;
+}
+
+#tray .container-box .box {
+    background-color: white;
+    border: 5px solid black;
+}
+
+/********************************
+TrayStyle
+********************************/
+/* TrayStyle */
+
+#tray-style {
+    height: 100%;
+    min-height: 100%;
+}
+
+#tray-style .tray-style-top {
+    height: 50%;
+    min-height: 50%;
+    background-color: #99CCFF;
+    position: relative;
+}
+
+#tray-style .tray-style-bottom {
+    height: 50%;
+    min-height: 50%;
+}
+
+#tray-style .tray-style-top .title {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+
+#tray-style .tray-style-top .container-rectangles {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tray-style .tray-style-top .container-rectangles .left-rectangle,
+#tray-style .tray-style-top .container-rectangles .middle-rectangle,
+#tray-style .tray-style-top .container-rectangles .right-rectangle {
+    margin-left: 5%;
+}
+
+#tray-style .tray-style-top .container-rectangles .left-rectangle {
+    width: 20%;
+    height: 100%;
+    z-index: 10;
+    float: left;
+    border: 2px solid black;
+}
+
+#tray-style .tray-style-top .container-rectangles .middle-rectangle {
+    width: 20%;
+    height: 100%;
+    z-index: 10;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#tray-style .tray-style-top .container-rectangles .right-rectangle {
+    width: 15%;
+    height: 150%;
+    z-index: 10;
+    float: left;
+    margin-top: -5%;
+    border: 2px solid black;
+}
+
+#tray-style .tray-style-top .container-legend {
+    position: absolute;
+    top: 150%;
+    width: 100%;
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tray-style .tray-style-top .container-legend .left-legend,
+#tray-style .tray-style-top .container-legend .middle-legend,
+#tray-style .tray-style-top .container-legend .right-legend {
+    margin-left: 5%;
+}
+
+#tray-style .tray-style-top .container-legend .left-legend {
+    width: 20%;
+    z-index: 10;
+    float: left;
+    text-align: center;
+}
+
+#tray-style .tray-style-top .container-legend .middle-legend {
+    width: 20%;
+    z-index: 10;
+    float: left;
+    text-align: center;
+}
+
+#tray-style .tray-style-top .container-legend .right-legend {
+    width: 15%;
+    z-index: 10;
+    float: left;
+    text-align: center;
+}
+
+/********************************
+Gadget
+********************************/
+
+.margin-in-gadget-layer {
+    margin-top: 40px;
+}
+
+#gadget {
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-8 {
+    background-color: #FFF988;
+    height: 100%;
+    min-height: 100%;
+}
+
+#gadget .col-md-4 h2 {
+    color: #FFF988;
+}
+
+#gadget .container-box .box {
+    background-color: black;
+}
+
+/********************************
+Layout Rules
+********************************/
+
+#layout-rules {
+    height: 100%;
+    min-height: 100%;
+}
+
+#layout-rules .col-md-4 {
+    height: 50%;
+    min-height: 50%;
+}
+
+#layout-rules .col-md-8 {
+    background-color: #99CCFF;
+    height: 100%;
+    min-height: 100%;
+}
+
+#layout-rules .container-box {
+    position: relative;
+    top: 90%;
+    width: 100%;
+    height: 25px;
+}
+
+#layout-rules .container-box .box {
+    width: 100%;
+}
+
+/********************************
+Colors
+********************************/
+#colors {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+#colors .col-md-4 {
+    height: 100%;
+    min-height: 100%;
+    background-color: #99CCFF;
+}
+
+#colors .col-md-8 {
+    height: 100%;
+    min-height: 100%;
+}
+
+#colors .container-title {
+    position: relative;
+}
+
+#colors .container-title .title {
+    position: absolute;
+    top: 10%;
+    margin-left: 15%;
+}
+
+#colors .container-circles .circle-left, #colors .container-circles .circle-right {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    z-index: 10;
+    top: calc(50% - 100px);
+    top: -webkit-calc(50% - 100px);
+    left: calc(33.33333% - 100px);
+    left: -webkit-calc(33.33333% - 100px);
+}
+
+#colors .container-circles .circle-left {
+    background-color: black;
+}
+
+#colors .container-circles .circle-right {
+    background-color: white;
+    margin-left: 33.33333%;
+}
+
+#colors .container-circles .left-legend, #colors .container-circles .right-legend {
+    position: absolute;
+    left: calc(33.33333% - 40px);
+    left: -webkit-calc(33.33333% - 40px);
+    top: 77%;
+    z-index: 20;
+}
+
+#colors .container-circles .right-legend {
+    margin-left: 33.33333%;
+}
+
+#colors .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+}
